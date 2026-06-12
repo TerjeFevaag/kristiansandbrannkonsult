@@ -24,74 +24,51 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-brand-white shadow-md' : 'bg-brand-dark'
-      }`}
-    >
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-brand-white shadow-md' : 'bg-brand-dark'}`}>
       <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <Link href="/">
             <Image
               src={scrolled ? '/images/logo-black.png' : '/images/logo-white.png'}
               alt="Kristiansand Brannkonsult"
-              width={234}
-              height={65}
+              width={234} height={65}
               className="object-contain h-[52px] w-auto"
               priority
             />
           </Link>
-
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-medium hover:text-brand-orange transition-colors ${
-                  scrolled ? 'text-brand-black' : 'text-brand-white'
-                }`}
-              >
+              <Link key={link.href} href={link.href}
+                className={`text-sm font-medium hover:text-brand-orange transition-colors ${scrolled ? 'text-brand-black' : 'text-brand-white/90'}`}>
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/kontakt-oss"
-              className="bg-brand-orange text-brand-white font-bold px-5 py-2.5 rounded-[10px] hover:opacity-90 transition-opacity text-sm"
-            >
+            <Link href="/kontakt-oss"
+              className={`font-bold px-6 py-2.5 rounded-full text-sm transition-all ${
+                scrolled
+                  ? 'bg-brand-orange text-brand-white hover:opacity-90'
+                  : 'border border-brand-white/60 text-brand-white hover:border-brand-white hover:bg-brand-white/10'
+              }`}>
               Kontakt oss
             </Link>
           </div>
-
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-            className={`lg:hidden transition-colors ${
-              scrolled ? 'text-brand-black' : 'text-brand-white'
-            }`}
-          >
+          <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle menu"
+            className={`lg:hidden transition-colors ${scrolled ? 'text-brand-black' : 'text-brand-white'}`}>
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
-
       {mobileOpen && (
         <div className="lg:hidden bg-brand-white border-t border-brand-gray">
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block px-6 py-3.5 text-brand-black hover:text-brand-orange hover:bg-brand-lightgray font-medium transition-colors border-b border-brand-gray"
-            >
+            <Link key={link.href} href={link.href} onClick={() => setMobileOpen(false)}
+              className="block px-6 py-3.5 text-brand-black hover:text-brand-orange hover:bg-brand-lightgray font-medium transition-colors border-b border-brand-gray">
               {link.label}
             </Link>
           ))}
           <div className="px-6 py-4">
-            <Link
-              href="/kontakt-oss"
-              onClick={() => setMobileOpen(false)}
-              className="block bg-brand-orange text-brand-white font-bold px-5 py-3 rounded-[10px] text-center hover:opacity-90 transition-opacity"
-            >
+            <Link href="/kontakt-oss" onClick={() => setMobileOpen(false)}
+              className="block bg-brand-orange text-brand-white font-bold px-5 py-3 rounded-full text-center hover:opacity-90 transition-opacity">
               Kontakt oss
             </Link>
           </div>

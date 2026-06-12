@@ -117,7 +117,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative h-screen flex items-center">
+      <section className="relative h-screen flex items-center -mt-20 lg:-mt-24">
         <Image
           src="/images/hero.jpg"
           alt="Kristiansand by"
@@ -126,7 +126,8 @@ export default function HomePage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-brand-dark/45" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/50 via-brand-dark/20 to-transparent" />
         <div className="relative z-10 w-full max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="hero-1 font-accent text-brand-orange text-2xl mb-4">
             Kristiansand Brannkonsult
@@ -319,7 +320,7 @@ export default function HomePage() {
           </ScrollReveal>
 
           <ScrollReveal delay={80} variant="fade">
-            <div className="max-w-3xl mx-auto bg-brand-white rounded-[30px] p-8 lg:p-10 shadow-sm">
+            <div className="bg-brand-white rounded-[30px] p-8 lg:p-10 shadow-sm">
               <FAQAccordion items={faqItems} />
             </div>
           </ScrollReveal>
