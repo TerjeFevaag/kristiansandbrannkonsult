@@ -56,7 +56,7 @@ export default function Footer() {
               <a href="tel:+4745601942" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Phone size={13} className="shrink-0" /> 456 01 942</a>
               <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Mail size={13} className="shrink-0" /> post@brannkonsult.no</a>
               <p className="flex items-start gap-2"><MapPin size={13} className="shrink-0 mt-0.5" /> Kristiansand, Agder</p>
-              <p className="text-brand-white/40 text-xs pt-2">Manâ€“Fre 08:00â€“16:00</p>
+              <p className="text-brand-white/40 text-xs pt-2">Man–Fre 08:00–16:00</p>
             </div>
           </div>
         </div>
