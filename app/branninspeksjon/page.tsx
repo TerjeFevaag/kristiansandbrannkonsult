@@ -5,36 +5,41 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll av brannkonsept i Kristiansand | Kristiansand Brannkonsult',
+  title: 'Branntilsyn og branninspeksjon i Kristiansand | Kristiansand Brannkonsult',
   description:
-    'Uavhengig kontroll (UK) av brannkonsept og brannprosjektering i Kristiansand og Agder. Sentralt godkjent. Nøytral part — vi selger ingen produkter.',
-  alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/uavhengig-kontroll' },
+    'Fått pålegg etter branntilsyn i Kristiansand? Vi hjelper borettslag, sameier og næringsbygg med branninspeksjon, tilstandsrapport og handlingsplan.',
+  alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/branninspeksjon' },
 }
 
 const faqItems = [
   {
-    question: 'Hva er uavhengig kontroll av brann?',
+    question: 'Hva er forskjellen på branntilsyn og branninspeksjon?',
     answer:
-      'Uavhengig kontroll er en lovpålagt kontroll av brannprosjekteringen i visse byggeprosjekter. En annen aktør enn den som prosjekterte skal gjennomgå og bekrefte at brannkonseptet er i tråd med regelverket.',
+      'Branntilsyn utføres av brann- og redningsetaten og er en myndighetskontroll. Branninspeksjon er en grundigere gjennomgang utført av oss som uavhengig rådgiver — vi kartlegger alle branntekniske forhold og utarbeider en handlingsplan.',
   },
   {
-    question: 'Når er det krav om uavhengig kontroll av brann?',
+    question: 'Hvem er ansvarlig for brannsikkerheten i et sameie?',
     answer:
-      'Det er krav om uavhengig kontroll når brannprosjekteringen er i tiltaksklasse 2 eller høyere, jf. SAK10. Dette gjelder de fleste leilighetsbygg, næringsbygg og offentlige bygg over en viss størrelse.',
+      'Styret i sameiet er ansvarlig for at fellesarealer og byggets brannsikkerhet ivaretas. Enkeltbeboere er ansvarlige for sine enheter. Vi kan bistå styret med å oppfylle kravene.',
   },
   {
-    question: 'Hva koster uavhengig kontroll?',
+    question: 'Hva skjer hvis bygget ikke oppfyller kravene?',
     answer:
-      'Prisen avhenger av prosjektets omfang og dokumentasjonsmengde. Kontakt oss for et uforpliktende pristilbud.',
+      'Kommunen kan gi pålegg om utbedring med frist. Vi hjelper deg med å forstå pålegget, prioritere tiltakene og dokumentere at utbedringene er gjennomført.',
   },
   {
-    question: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?',
+    question: 'Hva koster en branninspeksjon?',
     answer:
-      'Ja — vi kan utføre uavhengig kontroll for prosjekter der andre har prosjektert. Som nøytral rådgiver er dette en av våre kjernetjenester.',
+      'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende pristilbud basert på ditt bygg.',
+  },
+  {
+    question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
+    answer:
+      'Forskrift om brannforebygging krever at alle byggverk skal ha et sikkerhetsnivå tilsvarende BF85 (Byggforskrift 1985). Eldre bygninger som ikke oppfyller dette må oppgraderes. Vi vurderer ditt bygg og gir deg en klar anbefaling.',
   },
 ]
 
-export default function UavhengigKontrollPage() {
+export default function BranninspeksjonPage() {
   return (
     <>
       {/* Hero */}
@@ -43,13 +48,13 @@ export default function UavhengigKontrollPage() {
           <div className="hero-1 flex items-center justify-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
             <span>/</span>
-            <span>Uavhengig kontroll</span>
+            <span>Branninspeksjon</span>
           </div>
           <h1 className="hero-2 text-brand-black text-4xl lg:text-5xl font-black max-w-2xl mx-auto">
-            Uavhengig kontroll av brannkonsept i Kristiansand
+            Branntilsyn og branninspeksjon i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Vi utfører uavhengig kontroll (UK) av brannkonsept og brannprosjektering i Kristiansand og Agder.
+            Vi hjelper deg etter pålegg fra branntilsyn og kartlegger brannsikkerheten i din bygning.
           </p>
         </div>
       </section>
@@ -61,22 +66,33 @@ export default function UavhengigKontrollPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Dette gir økt trygghet, reduserer risiko for feil og bidrar til en mer forutsigbar byggeprosess.
+                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning i Kristiansand? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Når er det krav om uavhengig kontroll?</h2>
-                <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Etter SAK10 (Byggesaksforskriften) er det krav om uavhengig kontroll av brannprosjektering når prosjekteringen er i tiltaksklasse 2 eller høyere. Dette gjelder typisk:
+                <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  Forskrift om brannforebygging krever at alle byggverk har et brannsikkerhetsnivå tilsvarende det som gjaldt ved byggetidspunktet, minimum BF85 (Byggforskrift av 1985). Eldre bygg som ikke oppfyller dette kravet, skal oppgraderes. Eier er ansvarlig for at oppgradering gjennomføres.
                 </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Brann- og redningsetatens oppgave</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  Brannvesenet gjennomfører stikkprøvebaserte tilsyn og kan ikke gi en fullstendig gjennomgang av alle branntekniske forhold. Det er byggeiers ansvar å sørge for at alle krav er oppfylt — uavhengig av om brannvesenet har vært på tilsyn eller ikke.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i vår branninspeksjon?</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Leilighetsbygg med fire boenheter eller mer',
-                    'Næringsbygg over en viss størrelse',
-                    'Offentlige bygg og institusjoner',
-                    'Bygninger i risikoklasse 4, 5 og 6',
-                    'Rehabilitering av større eksisterende bygg',
+                    'Visuell inspeksjon av alle brannceller, rømningsveier og tekniske installasjoner',
+                    'Gjennomgang av eksisterende dokumentasjon',
+                    'Skriftlig tilstandsrapport med alle funn',
+                    'Prioritert handlingsplan for utbedring',
+                    'Veiledning om internkontrollrutiner',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -87,38 +103,13 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva kontrolleres?</h2>
-                <ul className="space-y-3 mb-8">
-                  {[
-                    'Brannkonseptets samsvar med TEK17',
-                    'Branntegninger og branncelleoppdeling',
-                    'Løsningsvalg for rømningsveier og slokkeanlegg',
-                    'Dokumentasjon av prosjekteringsgrunnlag',
-                    'Ansvarsrettserklæringer',
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-brand-darkgray">
-                      <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </ScrollReveal>
-
-              <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
-                <ul className="space-y-3 mb-8">
-                  {[
-                    'Uavhengig gjennomgang av brannkonsept og branntegninger',
-                    'Skriftlig kontrollrapport',
-                    'Erklæring av ansvarsrett for uavhengig kontroll',
-                    'Nøytral part — vi selger ingen produkter',
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-brand-darkgray">
-                      <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8 border-l-4 border-brand-orange">
+                  <h3 className="font-bold text-brand-black mb-2">Typisk ordlyd fra brannvesenet ved pålegg:</h3>
+                  <p className="text-brand-darkgray italic text-sm leading-relaxed">
+                    &laquo;Det er avdekket mangler ved brannsikkerheten i bygget. Eier pålegges å utarbeide en tilstandsrapport og gjennomføre nødvendige tiltak innen [dato].&raquo;
+                  </p>
+                  <p className="text-brand-darkgray text-sm mt-3">Vi hjelper deg med å oppfylle pålegget raskt og kostnadseffektivt.</p>
+                </div>
               </ScrollReveal>
 
               <ScrollReveal>
@@ -134,9 +125,9 @@ export default function UavhengigKontrollPage() {
               <ScrollReveal delay={200}>
                 <div className="sticky top-24">
                   <div className="bg-brand-dark rounded-[30px] p-8 text-brand-white">
-                    <h3 className="font-bold text-xl mb-3">Få tilbud på UK</h3>
+                    <h3 className="font-bold text-xl mb-3">Hjelp etter tilsyn</h3>
                     <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
-                      Kontakt oss for et uforpliktende tilbud på uavhengig kontroll. Vi svarer innen 24 timer.
+                      Ta kontakt for hjelp etter branntilsyn eller for en gjennomgang av byggets brannsikkerhet.
                     </p>
                     <Link
                       href="/kontakt-oss"
@@ -159,7 +150,7 @@ export default function UavhengigKontrollPage() {
                       {[
                         { href: '/brannkonsept', label: 'Brannkonsept' },
                         { href: '/brannprosjektering', label: 'Brannprosjektering' },
-                        { href: '/branninspeksjon', label: 'Branninspeksjon' },
+                        { href: '/uavhengig-kontroll', label: 'Uavhengig kontroll' },
                       ].map((link) => (
                         <li key={link.href}>
                           <Link href={link.href} className="text-brand-darkgray hover:text-brand-orange transition-colors text-sm font-medium">
@@ -180,7 +171,7 @@ export default function UavhengigKontrollPage() {
         <section className="bg-brand-dark py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for uavhengig kontroll i Kristiansand
+              Kontakt oss for hjelp etter branntilsyn i Kristiansand
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
               Få tilbud nå
