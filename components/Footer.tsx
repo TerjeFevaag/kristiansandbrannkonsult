@@ -23,7 +23,7 @@ export default function Footer() {
               <Image src="/images/logo-white.png" alt="Kristiansand Brannkonsult" width={234} height={72} className="object-contain" />
             </div>
             <p className="text-brand-white/60 text-sm leading-relaxed mb-6">
-              Brannprosjektering i Kristiansand og pa Sorlandet. Sentralt godkjent foretak, tiltaksklasse 1 og 2.
+              Brannprosjektering i Kristiansand og på Sørlandet. Sentralt godkjent foretak, tiltaksklasse 1 og 2.
             </p>
             <div className="flex gap-4">
               <a href="#" aria-label="Facebook" className="text-brand-white/50 hover:text-brand-orange transition-colors"><FacebookIcon /></a>
