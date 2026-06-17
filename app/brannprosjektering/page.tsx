@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { FileText, Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -23,19 +23,19 @@ const faqItems = [
       'Ja, de fleste tilbygg, bruksendringer og nye boenheter krever brannprosjektering. Ta kontakt for en gratis vurdering av akkurat ditt prosjekt.',
   },
   {
-    question: 'Er befaring nÃ¸dvendig?',
+    question: 'Er befaring nødvendig?',
     answer:
-      'For nybygg og enklere saker er det sjelden nÃ¸dvendig. Takket vÃ¦re digitale kartdata kan vi i mange tilfeller jobbe uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
+      'For nybygg og enklere saker er det sjelden nødvendig. Takket være digitale kartdata kan vi i mange tilfeller jobbe uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
   },
   {
-    question: 'Tilbyr dere hÃ¥ndverkertjenester?',
+    question: 'Tilbyr dere håndverkertjenester?',
     answer:
-      'Nei â€” vi er en nÃ¸ytral rÃ¥dgiver og selger ingen produkter eller hÃ¥ndverkertjenester. Dette sikrer at rÃ¥dgivningen vÃ¥r alltid er uavhengig.',
+      'Nei — vi er en nøytral rådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen vår alltid er uavhengig.',
   },
   {
-    question: 'Hva trengs for Ã¥ fÃ¥ et pristilbud?',
+    question: 'Hva trengs for å få et pristilbud?',
     answer:
-      'Vi trenger: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss, sÃ¥ sender vi tilbud innen 24 timer.',
+      'Vi trenger: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss, så sender vi tilbud innen 24 timer.',
   },
 ]
 
@@ -65,7 +65,7 @@ export default function BrannprosjekteringPage() {
             Brannprosjektering i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Vi sÃ¸rger for at ditt bygg i Kristiansand oppfyller alle krav til brannsikkerhet â€” til fast pris.
+            Vi sørger for at ditt bygg i Kristiansand oppfyller alle krav til brannsikkerhet — til fast pris.
           </p>
         </div>
       </section>
@@ -77,18 +77,18 @@ export default function BrannprosjekteringPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Brannprosjektering betyr skriftlig planlegging av nÃ¸dvendig brannsikring i og rundt bygningen. Vi sÃ¸rger for at ditt bygg i Kristiansand oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven â€” til fast pris.
+                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg i Kristiansand oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">NÃ¥r er det behov for brannprosjektering?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Når er det behov for brannprosjektering?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">Brannprosjektering kreves blant annet ved:</p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Bytte av vinduer eller dÃ¸rer i branncellebegrensende konstruksjoner',
+                    'Bytte av vinduer eller dører i branncellebegrensende konstruksjoner',
                     'Tilbygg til eksisterende bygg',
-                    'PÃ¥bygg (ny etasje)',
+                    'Påbygg (ny etasje)',
                     'Bruksendring (f.eks. fra kontor til bolig)',
                     'Etablering av ny selvstendig boenhet',
                     'Rehabilitering av eldre bygg',
@@ -107,8 +107,8 @@ export default function BrannprosjekteringPage() {
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
                   <ul className="space-y-2 text-brand-darkgray text-sm">
                     <li><strong>RKL 1:</strong> Garasjer, lager uten personopphold</li>
-                    <li><strong>RKL 2:</strong> Boliger â€” kan rÃ¸mme pÃ¥ egenhÃ¥nd</li>
-                    <li><strong>RKL 3:</strong> Bygninger med fÃ¥ personopphold</li>
+                    <li><strong>RKL 2:</strong> Boliger — kan rømme på egenhånd</li>
+                    <li><strong>RKL 3:</strong> Bygninger med få personopphold</li>
                     <li><strong>RKL 4:</strong> Kontorbygg, undervisningsbygg</li>
                     <li><strong>RKL 5:</strong> Hoteller, sykehjem, overnatting</li>
                     <li><strong>RKL 6:</strong> Sykehus med svekkede beboere</li>
@@ -117,9 +117,9 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Start tidlig â€” spar penger</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Start tidlig — spar penger</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Jo tidligere i prosjektet du involverer oss, desto enklere og billigere er det Ã¥ finne gode branntekniske lÃ¸sninger. Venter du til tegningene er ferdige, kan endringer bli kostbare. Ta kontakt allerede i skisseprosjektfasen.
+                  Jo tidligere i prosjektet du involverer oss, desto enklere og billigere er det å finne gode branntekniske løsninger. Venter du til tegningene er ferdige, kan endringer bli kostbare. Ta kontakt allerede i skisseprosjektfasen.
                 </p>
               </ScrollReveal>
 
@@ -129,9 +129,9 @@ export default function BrannprosjekteringPage() {
                   {[
                     'Brannkonsept og branntegninger',
                     'Ansvarsrett for brannprosjektering TKL 1 og 2',
-                    'Fastpris â€” ingen skjulte kostnader',
-                    'Levering innen 5â€“10 virkedager',
-                    'NÃ¸ytral rÃ¥dgivning â€” ingen produktsalg',
+                    'Fastpris — ingen skjulte kostnader',
+                    'Levering innen 5–10 virkedager',
+                    'Nøytral rådgivning — ingen produktsalg',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -158,7 +158,7 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spÃ¸rsmÃ¥l</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spørsmål</h2>
               </ScrollReveal>
               <ScrollReveal delay={80} variant="fade">
                 <FAQAccordion items={faqItems} />
@@ -216,10 +216,10 @@ export default function BrannprosjekteringPage() {
         <section className="bg-brand-dark py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Be om tilbud pÃ¥ brannprosjektering i Kristiansand
+              Be om tilbud på brannprosjektering i Kristiansand
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
-              FÃ¥ tilbud nÃ¥
+              Få tilbud nå
             </Link>
           </div>
         </section>
