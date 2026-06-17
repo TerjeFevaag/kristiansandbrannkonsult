@@ -1,21 +1,21 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle, Phone, Mail, MapPin } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Om Kristiansand Brannkonsult | Sentralt godkjent brannrådgiver',
+  title: 'Om Kristiansand Brannkonsult | Sentralt godkjent brannrÃ¥dgiver',
   description:
-    'Kristiansand Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Kristiansand og Agder.',
+    'Kristiansand Brannkonsult er et sentralt godkjent brannrÃ¥dgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Kristiansand og Agder.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/om-oss' },
 }
 
 const process = [
-  { step: '1', title: 'Kontakt oss', desc: 'Send forespørsel med informasjon om prosjektet.' },
+  { step: '1', title: 'Kontakt oss', desc: 'Send forespÃ¸rsel med informasjon om prosjektet.' },
   { step: '2', title: 'Vi sender tilbud', desc: 'Du mottar fastpristilbud innen 24 timer.' },
-  { step: '3', title: 'Du aksepterer', desc: 'Bekreft oppdraget — vi starter arbeidet.' },
-  { step: '4', title: 'Vi prosjekterer', desc: 'Erfarne brannrådgivere utarbeider dokumentasjonen.' },
+  { step: '3', title: 'Du aksepterer', desc: 'Bekreft oppdraget â€” vi starter arbeidet.' },
+  { step: '4', title: 'Vi prosjekterer', desc: 'Erfarne brannrÃ¥dgivere utarbeider dokumentasjonen.' },
   { step: '5', title: 'Dokumentasjon levert', desc: 'Komplett leveranse klar for kommunen.' },
 ]
 
@@ -34,7 +34,7 @@ export default function OmOssPage() {
             Om Kristiansand Brannkonsult
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013.
+            Sentralt godkjent brannrÃ¥dgiverfirma med over 1200 prosjekter siden 2013.
           </p>
         </div>
       </section>
@@ -44,15 +44,15 @@ export default function OmOssPage() {
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16 items-start">
             <ScrollReveal className="lg:w-1/2">
-              <h2 className="text-brand-black text-3xl font-black mb-6">Vår bakgrunn</h2>
+              <h2 className="text-brand-black text-3xl font-black mb-6">VÃ¥r bakgrunn</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Vi er et spesialisert brannprosjekteringsfirma med base i Kristiansand, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
+                Vi er et spesialisert brannprosjekteringsfirma med base i Kristiansand, og vi tar oppdrag over hele landet. VÃ¥r virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Siden oppstart i 2013 har vi vært involvert i over 1200 forskjellige brannprosjekter — fra små garasjer og enkle tilbygg til store leilighetsbygg og næringseiendommer.
+                Siden oppstart i 2013 har vi vÃ¦rt involvert i over 1200 forskjellige brannprosjekter â€” fra smÃ¥ garasjer og enkle tilbygg til store leilighetsbygg og nÃ¦ringseiendommer.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-8">
-                Vi kjenner godt til byggemarkedet i Kristiansand og på Sørlandet. Fra sentrumsnære leilighetsprosjekter i Kvadraturen til eneboliger og fritidsboliger langs kystlinjen — vi har erfaring med alle typer prosjekter. Vi leverer brannkonsept og brannprosjektering til private, arkitekter og utbyggere i hele Agder.
+                Vi kjenner godt til byggemarkedet i Kristiansand og pÃ¥ SÃ¸rlandet. Fra sentrumsnÃ¦re leilighetsprosjekter i Kvadraturen til eneboliger og fritidsboliger langs kystlinjen â€” vi har erfaring med alle typer prosjekter. Vi leverer brannkonsept og brannprosjektering til private, arkitekter og utbyggere i hele Agder.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -60,7 +60,7 @@ export default function OmOssPage() {
                   { number: '2013', label: 'Etablert' },
                   { number: '1200+', label: 'Prosjekter' },
                   { number: 'TKL 1+2', label: 'Godkjenning' },
-                  { number: '5', label: 'Brannrådgivere' },
+                  { number: '5', label: 'BrannrÃ¥dgivere' },
                 ].map((stat, i) => (
                   <div key={i} className="bg-brand-lightgray rounded-[20px] p-5 text-center">
                     <div className="text-brand-orange font-black text-2xl mb-1">{stat.number}</div>
@@ -92,7 +92,7 @@ export default function OmOssPage() {
             <ScrollReveal className="lg:w-1/2">
               <h2 className="text-brand-black text-3xl font-black mb-5">Sentralt godkjent foretak</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Sentral godkjenning fra Direktoratet for byggkvalitet (DiBK) er en frivillig, nasjonal godkjenningsordning som dokumenterer at foretaket har tilstrekkelig kompetanse og kvalitetssystem for å utøve sine oppgaver i byggesaker.
+                Sentral godkjenning fra Direktoratet for byggkvalitet (DiBK) er en frivillig, nasjonal godkjenningsordning som dokumenterer at foretaket har tilstrekkelig kompetanse og kvalitetssystem for Ã¥ utÃ¸ve sine oppgaver i byggesaker.
               </p>
               <ul className="space-y-3">
                 {[
@@ -100,7 +100,7 @@ export default function OmOssPage() {
                   'Ansvarsforsikring som gir deg trygghet',
                   'Godkjent kvalitetssystem',
                   'Referanseprosjekter evaluert av DiBK',
-                  'Kan erklære ansvarsrett overfor kommunen',
+                  'Kan erklÃ¦re ansvarsrett overfor kommunen',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                     <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -122,16 +122,16 @@ export default function OmOssPage() {
         </div>
       </section>
 
-      {/* Nøytral rådgiver */}
+      {/* NÃ¸ytral rÃ¥dgiver */}
       <section className="py-16 lg:py-24 bg-brand-white">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="max-w-3xl">
-            <h2 className="text-brand-black text-3xl font-black mb-5">Nøytral rådgiver</h2>
+            <h2 className="text-brand-black text-3xl font-black mb-5">NÃ¸ytral rÃ¥dgiver</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Kristiansand Brannkonsult selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
+              Kristiansand Brannkonsult selger ingen produkter og tilbyr ingen hÃ¥ndverkertjenester. Vi er utelukkende en rÃ¥dgivende part â€” det sikrer at rÃ¥det vi gir alltid er i ditt beste interesse, og ikke pÃ¥virket av salgsinteresser.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Mange av kundene våre er arkitekter og entreprenører som setter pris på at vi er lett tilgjengelige og raskt kan svare på spørsmål underveis i prosjektet — uten ekstra kostnad.
+              Mange av kundene vÃ¥re er arkitekter og entreprenÃ¸rer som setter pris pÃ¥ at vi er lett tilgjengelige og raskt kan svare pÃ¥ spÃ¸rsmÃ¥l underveis i prosjektet â€” uten ekstra kostnad.
             </p>
           </ScrollReveal>
         </div>
@@ -141,7 +141,7 @@ export default function OmOssPage() {
       <section className="py-16 lg:py-24 bg-brand-lightgray">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center mb-12">
-            <h2 className="text-brand-black text-3xl font-black">Vår prosess</h2>
+            <h2 className="text-brand-black text-3xl font-black">VÃ¥r prosess</h2>
           </ScrollReveal>
           <div className="flex flex-col lg:flex-row gap-0">
             {process.map((p, i) => (
@@ -172,11 +172,11 @@ export default function OmOssPage() {
                 <div className="space-y-2 text-brand-white/60 text-sm">
                   <div className="flex items-center gap-2">
                     <Phone size={14} />
-                    <a href="tel:+4700000000" className="hover:text-brand-orange transition-colors">+47 000 00 000</a>
+                    <a href="tel:+4745601942" className="hover:text-brand-orange transition-colors">456 01 942</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail size={14} />
-                    <a href="mailto:post@kristiansandbrannkonsult.no" className="hover:text-brand-orange transition-colors">post@kristiansandbrannkonsult.no</a>
+                    <a href="mailto:post@brannkonsult.no" className="hover:text-brand-orange transition-colors">post@brannkonsult.no</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin size={14} />
@@ -188,7 +188,7 @@ export default function OmOssPage() {
                 href="/kontakt-oss"
                 className="bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 hover:scale-[1.03] transition-all duration-200 whitespace-nowrap"
               >
-                Send forespørsel
+                Send forespÃ¸rsel
               </Link>
             </div>
           </ScrollReveal>

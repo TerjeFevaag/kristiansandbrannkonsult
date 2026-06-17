@@ -1,11 +1,11 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Kontakt Kristiansand Brannkonsult | Få uforpliktende tilbud',
+  title: 'Kontakt Kristiansand Brannkonsult | FÃ¥ uforpliktende tilbud',
   description:
     'Kontakt Kristiansand Brannkonsult for brannprosjektering i Kristiansand og Agder. Vi svarer innen 24 timer. Fastpris og sentralt godkjent.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/kontakt-oss' },
@@ -36,7 +36,7 @@ export default function KontaktOssPage() {
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16">
             <ScrollReveal className="lg:w-[60%]">
-              <h2 className="text-brand-black text-2xl font-black mb-8">Send oss en forespørsel</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-8">Send oss en forespÃ¸rsel</h2>
               <ContactForm />
             </ScrollReveal>
 
@@ -49,8 +49,8 @@ export default function KontaktOssPage() {
                   </div>
                   <div>
                     <p className="font-bold text-brand-black mb-1">Telefon</p>
-                    <a href="tel:+4700000000" className="text-brand-darkgray hover:text-brand-orange transition-colors">
-                      +47 000 00 000
+                    <a href="tel:+4745601942" className="text-brand-darkgray hover:text-brand-orange transition-colors">
+                      456 01 942
                     </a>
                   </div>
                 </div>
@@ -61,8 +61,8 @@ export default function KontaktOssPage() {
                   </div>
                   <div>
                     <p className="font-bold text-brand-black mb-1">E-post</p>
-                    <a href="mailto:post@kristiansandbrannkonsult.no" className="text-brand-darkgray hover:text-brand-orange transition-colors">
-                      post@kristiansandbrannkonsult.no
+                    <a href="mailto:post@brannkonsult.no" className="text-brand-darkgray hover:text-brand-orange transition-colors">
+                      post@brannkonsult.no
                     </a>
                   </div>
                 </div>
@@ -82,8 +82,8 @@ export default function KontaktOssPage() {
                     <Clock size={18} className="text-brand-orange" />
                   </div>
                   <div>
-                    <p className="font-bold text-brand-black mb-1">Åpningstider</p>
-                    <p className="text-brand-darkgray">Man–Fre: 08:00–16:00</p>
+                    <p className="font-bold text-brand-black mb-1">Ã…pningstider</p>
+                    <p className="text-brand-darkgray">Manâ€“Fre: 08:00â€“16:00</p>
                   </div>
                 </div>
               </div>
