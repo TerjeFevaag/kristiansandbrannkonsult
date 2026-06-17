@@ -133,7 +133,7 @@ export default function BranninspeksjonPage() {
                       href="/kontakt-oss"
                       className="block bg-brand-orange text-brand-white font-bold px-6 py-3.5 rounded-[10px] text-center hover:opacity-90 transition-opacity mb-6"
                     >
-                      Kontakt oss
+                      Avtal branninspeksjon
                     </Link>
                     <div className="space-y-3 pt-4 border-t border-brand-white/10">
                       <a href="tel:+4700000000" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
