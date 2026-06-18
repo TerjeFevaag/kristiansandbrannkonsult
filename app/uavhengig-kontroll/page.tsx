@@ -25,12 +25,12 @@ const faqItems = [
   {
     question: 'Hva koster uavhengig kontroll?',
     answer:
-      'Prisen avhenger av prosjektets omfang og dokumentasjonsmengde. Kontakt oss for et uforpliktende pristilbud.',
+      'Prisen avhenger av prosjektets omfang og dokumentasjonsmengde. Vi utfører UK i hele landet — fra Kristiansand og Agder til Oslo, Bergen og resten av Norge. Kontakt oss for et uforpliktende pristilbud.',
   },
   {
     question: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?',
     answer:
-      'Ja — vi kan utføre uavhengig kontroll for prosjekter der andre har prosjektert. Som nøytral rådgiver er dette en av våre kjernetjenester.',
+      'Ja — vi kan utføre uavhengig kontroll for prosjekter der andre har prosjektert, uansett hvor i landet prosjektet er. Som nøytral rådgiver er dette en av våre kjernetjenester.',
   },
 ]
 

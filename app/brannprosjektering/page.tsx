@@ -13,19 +13,24 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: 'Hva koster brannprosjektering i Kristiansand?',
+    question: 'Hva koster brannprosjektering?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris slik at du slipper ubehagelige overraskelser.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris uansett hvor i landet prosjektet er.',
   },
   {
     question: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?',
     answer:
-      'Ja, de fleste tilbygg, bruksendringer og nye boenheter krever brannprosjektering. Ta kontakt for en gratis vurdering av akkurat ditt prosjekt.',
+      'Ja, de fleste tilbygg, bruksendringer og nye boenheter krever brannprosjektering. Ta kontakt for en gratis vurdering av akkurat ditt prosjekt — uansett hvor i Norge det befinner seg.',
   },
   {
     question: 'Er befaring nødvendig?',
     answer:
-      'For nybygg og enklere saker er det sjelden nødvendig. Takket være digitale kartdata kan vi i mange tilfeller jobbe uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
+      'For nybygg og enklere saker er det sjelden nødvendig. Takket være digitale kartdata kan vi i mange tilfeller jobbe uten fysisk befaring — noe som gjør det like enkelt å betjene kunder i hele landet. Vi gir beskjed dersom vi ser behov for befaring.',
+  },
+  {
+    question: 'Leverer dere i hele Norge?',
+    answer:
+      'Ja. Vi har base i Kristiansand og kjenner byggemarkedet i Agder godt, men vi tar jevnlig oppdrag fra hele landet. Ta kontakt uansett hvor prosjektet ditt er.',
   },
   {
     question: 'Tilbyr dere håndverkertjenester?',

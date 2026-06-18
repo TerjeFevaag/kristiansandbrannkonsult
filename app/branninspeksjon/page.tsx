@@ -30,12 +30,12 @@ const faqItems = [
   {
     question: 'Hva koster en branninspeksjon?',
     answer:
-      'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende pristilbud basert på ditt bygg.',
+      'Prisen avhenger av byggets størrelse og kompleksitet. Vi leverer branninspeksjon over hele landet — fra Kristiansand og Agder til resten av Norge. Kontakt oss for et uforpliktende pristilbud.',
   },
   {
     question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
     answer:
-      'Forskrift om brannforebygging krever at alle byggverk skal ha et sikkerhetsnivå tilsvarende BF85 (Byggforskrift 1985). Eldre bygninger som ikke oppfyller dette må oppgraderes. Vi vurderer ditt bygg og gir deg en klar anbefaling.',
+      'Forskrift om brannforebygging krever at alle byggverk skal ha et sikkerhetsnivå tilsvarende BF85 (Byggforskrift 1985). Eldre bygninger som ikke oppfyller dette må oppgraderes. Vi vurderer bygg over hele landet og gir deg en klar anbefaling.',
   },
 ]
 

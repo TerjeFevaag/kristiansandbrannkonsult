@@ -23,9 +23,14 @@ const faqItems = [
       'For nybygg og enklere saker er det sjelden nødvendig med befaring. Takket være digitale kartdata og gode tegningsunderlag kan vi i mange tilfeller utarbeide brannkonseptet uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
   },
   {
-    question: 'Hva koster et brannkonsept i Kristiansand?',
+    question: 'Hva koster et brannkonsept?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris slik at du slipper ubehagelige overraskelser. Send oss informasjon om prosjektet for et nøyaktig tilbud.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris uansett hvor i landet prosjektet befinner seg. Send oss informasjon om prosjektet for et nøyaktig tilbud.',
+  },
+  {
+    question: 'Leverer dere brannkonsept over hele Norge?',
+    answer:
+      'Ja — vi har base i Kristiansand, men tar oppdrag i hele landet. De fleste brannkonsepter kan utarbeides digitalt uten befaring, noe som gjør det like enkelt å jobbe med prosjekter i Oslo, Bergen eller Tromsø som i Agder.',
   },
   {
     question: 'Tilbyr dere håndverkertjenester?',

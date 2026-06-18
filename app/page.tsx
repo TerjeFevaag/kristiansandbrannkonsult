@@ -62,8 +62,8 @@ const faqItems = [
     answer: 'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.',
   },
   {
-    question: 'Tar dere oppdrag utenfor Kristiansand?',
-    answer: 'Vi hjelper kunder i Kristiansand, Agder og resten av landet. Kontakt oss uansett hvor i Norge prosjektet ditt er.',
+    question: 'Hvor i landet leverer dere?',
+    answer: 'Vi leverer brannprosjektering over hele Norge. Vi har base i Kristiansand og betjener regelmessig kunder i hele Agder — Grimstad, Lillesand, Mandal, Arendal og omegn — men tar like gjerne oppdrag i Oslo, Bergen, Trondheim og resten av landet. Takket være digitale verktøy krever de fleste oppdrag ikke fysisk befaring.',
   },
 ]
 
