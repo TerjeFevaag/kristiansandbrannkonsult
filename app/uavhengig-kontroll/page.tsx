@@ -44,10 +44,31 @@ const faqSchema = {
   })),
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.kristiansandbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Uavhengig kontroll', item: 'https://www.kristiansandbrannkonsult.no/uavhengig-kontroll' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Uavhengig kontroll av brannkonsept',
+  description: 'Uavhengig kontroll (UK) av brannkonsept og brannprosjektering i Kristiansand og Agder. Sentralt godkjent.',
+  provider: { '@type': 'LocalBusiness', name: 'Kristiansand Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
+  areaServed: ['Kristiansand', 'Lillesand', 'Grimstad', 'Mandal', 'Arendal', 'Agder'],
+  url: 'https://www.kristiansandbrannkonsult.no/uavhengig-kontroll',
+}
+
 export default function UavhengigKontrollPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="bg-brand-lightgray py-16 lg:py-20">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -133,6 +154,21 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
+                  <h3 className="font-bold text-brand-black text-lg mb-2">Pris</h3>
+                  <p className="text-brand-darkgray">
+                    Fra ca. <strong className="text-brand-black">8 000 kr</strong> ekskl. mva. Prisen avhenger av prosjektets omfang og dokumentasjonsmengde. Alltid fastpris.
+                  </p>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  Vi utfører uavhengig kontroll i Kristiansand og regionen for øvrig — Grimstad, Lillesand, Arendal, Mandal og resten av Agder.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spørsmål</h2>
               </ScrollReveal>
               <ScrollReveal delay={80} variant="fade">
@@ -179,6 +215,10 @@ export default function UavhengigKontrollPage() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                  <div className="mt-6 bg-brand-white rounded-[30px] p-6 flex flex-col items-center border border-brand-gray">
+                    <img src="/images/sentralt-godkjent.png" alt="Sentralt godkjent foretak" className="h-20 object-contain" />
+                    <p className="text-xs text-brand-darkgray text-center mt-2">Sentralt godkjent TKL 1 og 2</p>
                   </div>
                 </div>
               </ScrollReveal>

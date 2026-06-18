@@ -128,7 +128,7 @@ export default function PipebrannPage() {
             <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
               <p className="text-brand-darkgray font-medium mb-2">Har du spørsmål om brannsikkerhet i din bygning?</p>
               <p className="text-brand-darkgray text-sm leading-relaxed">
-                Som sentralt godkjent brannrådgiver hjelper vi deg med brannprosjektering, branntilsyn og brannkonsept. Ta kontakt for en gratis vurdering.
+                Som sentralt godkjent brannrådgiver hjelper vi deg med brannprosjektering, branninspeksjon og brannkonsept. Ta kontakt for en gratis vurdering.
               </p>
             </div>
           </ScrollReveal>

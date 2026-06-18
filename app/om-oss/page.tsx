@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Om Kristiansand Brannkonsult | Sentralt godkjent brannrådgiver',
   description:
-    'Kristiansand Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Kristiansand og Agder.',
+    'Kristiansand Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/om-oss' },
 }
 

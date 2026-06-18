@@ -5,9 +5,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Branntilsyn og branninspeksjon i Kristiansand | Kristiansand Brannkonsult',
+  title: 'Branninspeksjon i Kristiansand | Kristiansand Brannkonsult',
   description:
-    'Fått pålegg etter branntilsyn i Kristiansand? Vi hjelper borettslag, sameier og næringsbygg med branninspeksjon, tilstandsrapport og handlingsplan.',
+    'Branninspeksjon i Kristiansand — vi hjelper borettslag, sameier og næringsbygg etter pålegg fra branntilsyn. Tilstandsrapport og handlingsplan. Sentralt godkjent.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/branninspeksjon' },
 }
 
@@ -49,10 +49,31 @@ const faqSchema = {
   })),
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.kristiansandbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Branninspeksjon', item: 'https://www.kristiansandbrannkonsult.no/branninspeksjon' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Branninspeksjon',
+  description: 'Branninspeksjon og tilstandsvurdering av brannsikkerhet for borettslag, sameier og næringsbygg i Kristiansand og Agder.',
+  provider: { '@type': 'LocalBusiness', name: 'Kristiansand Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
+  areaServed: ['Kristiansand', 'Lillesand', 'Grimstad', 'Mandal', 'Arendal', 'Agder'],
+  url: 'https://www.kristiansandbrannkonsult.no/branninspeksjon',
+}
+
 export default function BranninspeksjonPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="bg-brand-lightgray py-16 lg:py-20">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -62,7 +83,7 @@ export default function BranninspeksjonPage() {
             <span>Branninspeksjon</span>
           </div>
           <h1 className="hero-2 text-brand-black text-4xl lg:text-5xl font-black max-w-2xl mx-auto">
-            Branntilsyn og branninspeksjon i Kristiansand
+            Branninspeksjon i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
             Vi hjelper deg etter pålegg fra branntilsyn og kartlegger brannsikkerheten i din bygning.
@@ -124,6 +145,21 @@ export default function BranninspeksjonPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
+                  <h3 className="font-bold text-brand-black text-lg mb-2">Pris</h3>
+                  <p className="text-brand-darkgray">
+                    Fra ca. <strong className="text-brand-black">8 000 kr</strong> ekskl. mva. for enklere bygg. Prisen avhenger av byggets størrelse og kompleksitet. Alltid fastpris.
+                  </p>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  Vi utfører branninspeksjon i Kristiansand og hele Agder — Lillesand, Grimstad, Mandal, Arendal og omegn. Ta kontakt for et uforpliktende tilbud.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spørsmål</h2>
               </ScrollReveal>
               <ScrollReveal delay={80} variant="fade">
@@ -148,10 +184,10 @@ export default function BranninspeksjonPage() {
                     </Link>
                     <div className="space-y-3 pt-4 border-t border-brand-white/10">
                       <a href="tel:+4745601942" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
-                        <Phone size={14} /> +47 000 00 000
+                        <Phone size={14} /> 456 01 942
                       </a>
-                      <a href="mailto:post@kristiansandbrannkonsult.no" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
-                        <Mail size={14} /> post@kristiansandbrannkonsult.no
+                      <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
+                        <Mail size={14} /> post@brannkonsult.no
                       </a>
                     </div>
                   </div>
@@ -171,6 +207,10 @@ export default function BranninspeksjonPage() {
                       ))}
                     </ul>
                   </div>
+                  <div className="mt-6 bg-brand-white rounded-[30px] p-6 flex flex-col items-center border border-brand-gray">
+                    <img src="/images/sentralt-godkjent.png" alt="Sentralt godkjent foretak" className="h-20 object-contain" />
+                    <p className="text-xs text-brand-darkgray text-center mt-2">Sentralt godkjent TKL 1 og 2</p>
+                  </div>
                 </div>
               </ScrollReveal>
             </div>
@@ -182,7 +222,7 @@ export default function BranninspeksjonPage() {
         <section className="bg-brand-dark py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for hjelp etter branntilsyn i Kristiansand
+              Bestill branninspeksjon i Kristiansand
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
               Få tilbud nå

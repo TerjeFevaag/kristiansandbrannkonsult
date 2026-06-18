@@ -54,10 +54,32 @@ const faqSchema = {
   })),
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.kristiansandbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Brannkonsept', item: 'https://www.kristiansandbrannkonsult.no/brannkonsept' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Brannkonsept',
+  description: 'Utarbeidelse av brannkonsept for byggesaker i Kristiansand og Agder. Sentralt godkjent TKL 1+2. Fastpris alltid.',
+  provider: { '@type': 'LocalBusiness', name: 'Kristiansand Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
+  areaServed: ['Kristiansand', 'Lillesand', 'Grimstad', 'Mandal', 'Arendal', 'Agder'],
+  url: 'https://www.kristiansandbrannkonsult.no/brannkonsept',
+  offers: { '@type': 'Offer', price: '15000', priceCurrency: 'NOK', description: 'Fra ca. 15 000 kr ekskl. mva., tiltaksklasse 2' },
+}
+
 export default function BrannkonseptPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="bg-brand-lightgray py-16 lg:py-20">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -160,6 +182,12 @@ export default function BrannkonseptPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  Vi utarbeider brannkonsept for byggeprosjekter i Kristiansand og hele Agder — Lillesand, Grimstad, Arendal, Mandal og omegn. Ta kontakt for en gratis vurdering.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spørsmål</h2>
               </ScrollReveal>
               <ScrollReveal delay={80} variant="fade">
@@ -207,6 +235,10 @@ export default function BrannkonseptPage() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                  <div className="mt-6 bg-brand-white rounded-[30px] p-6 flex flex-col items-center border border-brand-gray">
+                    <img src="/images/sentralt-godkjent.png" alt="Sentralt godkjent foretak" className="h-20 object-contain" />
+                    <p className="text-xs text-brand-darkgray text-center mt-2">Sentralt godkjent TKL 1 og 2</p>
                   </div>
                 </div>
               </ScrollReveal>

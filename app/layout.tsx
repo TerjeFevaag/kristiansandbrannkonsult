@@ -59,14 +59,22 @@ const jsonLd = {
   description: 'Brannprosjektering og brannkonsept i Kristiansand',
   telephone: '+4745601942',
   email: 'post@brannkonsult.no',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Kristiansand',
-    addressCountry: 'NO',
-  },
   url: 'https://www.kristiansandbrannkonsult.no',
   priceRange: 'Fra kr 15 000',
   hasCredential: 'Sentralt godkjent tiltaksklasse 1 og 2',
+  openingHours: 'Mo-Fr 08:00-16:00',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'TODO: Legg inn gateadresse',
+    addressLocality: 'Kristiansand',
+    postalCode: 'TODO: Legg inn postnummer',
+    addressCountry: 'NO',
+  },
+  sameAs: [
+    'TODO: Legg inn URL til Google My Business',
+    'TODO: Legg inn URL til LinkedIn-profil',
+    'TODO: Legg inn URL til Facebook-side',
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5',

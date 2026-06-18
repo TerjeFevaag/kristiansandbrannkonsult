@@ -136,7 +136,7 @@ export default function RoykvarselPage() {
             <div className="bg-brand-lightgray rounded-[20px] p-6">
               <p className="text-brand-darkgray font-medium mb-2">Trenger du brannteknisk rådgivning?</p>
               <p className="text-brand-darkgray text-sm leading-relaxed">
-                Vi er sentralt godkjent brannrådgiver og hjelper deg med brannprosjektering, brannkonsept og branntilsyn i Kristiansand og Agder.
+                Vi er sentralt godkjent brannrådgiver og hjelper deg med brannprosjektering, brannkonsept og branninspeksjon i Kristiansand og Agder.
               </p>
             </div>
           </ScrollReveal>
