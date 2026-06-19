@@ -61,8 +61,8 @@ export default function KontaktOssPage() {
                   </div>
                   <div>
                     <p className="font-bold text-brand-black mb-1">E-post</p>
-                    <a href="mailto:post@brannkonsult.no" className="text-brand-darkgray hover:text-brand-orange transition-colors">
-                      post@brannkonsult.no
+                    <a href="mailto:post@kristiansandbrannkonsult.no" className="text-brand-darkgray hover:text-brand-orange transition-colors">
+                      post@kristiansandbrannkonsult.no
                     </a>
                   </div>
                 </div>

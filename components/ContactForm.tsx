@@ -1,8 +1,49 @@
 'use client'
 
+import { useState } from 'react'
+
+type Status = 'idle' | 'sending' | 'success' | 'error'
+
 export default function ContactForm() {
+  const [status, setStatus] = useState<Status>('idle')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('sending')
+
+    const form = e.currentTarget
+    const data = {
+      navn: (form.elements.namedItem('navn') as HTMLInputElement).value,
+      epost: (form.elements.namedItem('epost') as HTMLInputElement).value,
+      telefon: (form.elements.namedItem('telefon') as HTMLInputElement).value,
+      prosjekttype: (form.elements.namedItem('prosjekttype') as HTMLSelectElement).value,
+      melding: (form.elements.namedItem('melding') as HTMLTextAreaElement).value,
+    }
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      setStatus(res.ok ? 'success' : 'error')
+    } catch {
+      setStatus('error')
+    }
+  }
+
+  if (status === 'success') {
+    return (
+      <div className="bg-brand-lightgray rounded-[20px] p-10 text-center">
+        <div className="text-brand-orange text-5xl mb-4">✓</div>
+        <h3 className="text-brand-black font-black text-xl mb-2">Takk for din henvendelse!</h3>
+        <p className="text-brand-darkgray">Vi svarer deg innen 24 timer på hverdager.</p>
+      </div>
+    )
+  }
+
   return (
-    <form action="#" method="POST" className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-5">
       <div>
         <label htmlFor="navn" className="block text-sm font-bold text-brand-black mb-1.5">
           Navn *
@@ -77,11 +118,21 @@ export default function ContactForm() {
         />
       </div>
 
+      {status === 'error' && (
+        <p className="text-red-600 text-sm">
+          Noe gikk galt. Prøv igjen eller send e-post direkte til{' '}
+          <a href="mailto:post@kristiansandbrannkonsult.no" className="underline">
+            post@kristiansandbrannkonsult.no
+          </a>
+        </p>
+      )}
+
       <button
         type="submit"
-        className="w-full bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-base"
+        disabled={status === 'sending'}
+        className="w-full bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-base disabled:opacity-60"
       >
-        Send forespørsel
+        {status === 'sending' ? 'Sender...' : 'Send forespørsel'}
       </button>
     </form>
   )

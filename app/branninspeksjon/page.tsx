@@ -186,8 +186,8 @@ export default function BranninspeksjonPage() {
                       <a href="tel:+4748481914" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
                         <Phone size={14} /> 484 81 914
                       </a>
-                      <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
-                        <Mail size={14} /> post@brannkonsult.no
+                      <a href="mailto:post@kristiansandbrannkonsult.no" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
+                        <Mail size={14} /> post@kristiansandbrannkonsult.no
                       </a>
                     </div>
                   </div>

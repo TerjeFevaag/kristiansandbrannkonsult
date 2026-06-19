@@ -176,7 +176,7 @@ export default function OmOssPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail size={14} />
-                    <a href="mailto:post@brannkonsult.no" className="hover:text-brand-orange transition-colors">post@brannkonsult.no</a>
+                    <a href="mailto:post@kristiansandbrannkonsult.no" className="hover:text-brand-orange transition-colors">post@kristiansandbrannkonsult.no</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin size={14} />

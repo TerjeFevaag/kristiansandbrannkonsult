@@ -58,7 +58,7 @@ const jsonLd = {
   name: 'Kristiansand Brannkonsult AS',
   description: 'Brannprosjektering og brannkonsept i Kristiansand',
   telephone: '+4748481914',
-  email: 'post@brannkonsult.no',
+  email: 'post@kristiansandbrannkonsult.no',
   url: 'https://www.kristiansandbrannkonsult.no',
   priceRange: 'Fra kr 15 000',
   hasCredential: 'Sentralt godkjent tiltaksklasse 1 og 2',
