@@ -57,7 +57,7 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'Kristiansand Brannkonsult AS',
   description: 'Brannprosjektering og brannkonsept i Kristiansand',
-  telephone: '+4745601942',
+  telephone: '+4748481914',
   email: 'post@brannkonsult.no',
   url: 'https://www.kristiansandbrannkonsult.no',
   priceRange: 'Fra kr 15 000',
@@ -65,9 +65,9 @@ const jsonLd = {
   openingHours: 'Mo-Fr 08:00-16:00',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'TODO: Legg inn gateadresse',
-    addressLocality: 'Kristiansand',
-    postalCode: 'TODO: Legg inn postnummer',
+    streetAddress: 'Haakon VII\'s gate 6',
+    addressLocality: 'Oslo',
+    postalCode: '0161',
     addressCountry: 'NO',
   },
   sameAs: [

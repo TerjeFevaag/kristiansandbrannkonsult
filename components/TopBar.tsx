@@ -32,11 +32,11 @@ export default function TopBar() {
       <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex items-center gap-4 flex-wrap">
           <a
-            href="tel:+4745601942"
+            href="tel:+4748481914"
             className="flex items-center gap-1.5 hover:text-brand-orange transition-colors"
           >
             <Phone size={13} />
-            <span>456 01 942</span>
+            <span>484 81 914</span>
           </a>
           <a
             href="mailto:post@brannkonsult.no"

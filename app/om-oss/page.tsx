@@ -172,7 +172,7 @@ export default function OmOssPage() {
                 <div className="space-y-2 text-brand-white/60 text-sm">
                   <div className="flex items-center gap-2">
                     <Phone size={14} />
-                    <a href="tel:+4745601942" className="hover:text-brand-orange transition-colors">456 01 942</a>
+                    <a href="tel:+4748481914" className="hover:text-brand-orange transition-colors">484 81 914</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail size={14} />
@@ -180,7 +180,7 @@ export default function OmOssPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin size={14} />
-                    <span>Kristiansand, Agder</span>
+                    <span>Kristiansand, Sørlandet</span>
                   </div>
                 </div>
               </div>

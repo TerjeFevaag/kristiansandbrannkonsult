@@ -49,8 +49,8 @@ export default function KontaktOssPage() {
                   </div>
                   <div>
                     <p className="font-bold text-brand-black mb-1">Telefon</p>
-                    <a href="tel:+4745601942" className="text-brand-darkgray hover:text-brand-orange transition-colors">
-                      456 01 942
+                    <a href="tel:+4748481914" className="text-brand-darkgray hover:text-brand-orange transition-colors">
+                      484 81 914
                     </a>
                   </div>
                 </div>
@@ -72,8 +72,10 @@ export default function KontaktOssPage() {
                     <MapPin size={18} className="text-brand-orange" />
                   </div>
                   <div>
-                    <p className="font-bold text-brand-black mb-1">Adresse</p>
-                    <p className="text-brand-darkgray">Kristiansand, Agder</p>
+                    <p className="font-bold text-brand-black mb-1">Postadresse</p>
+                    <p className="text-brand-darkgray">Brannkonsult AS</p>
+                    <p className="text-brand-darkgray">Haakon VII's gate 6</p>
+                    <p className="text-brand-darkgray">0161 Oslo</p>
                   </div>
                 </div>
 
@@ -89,9 +91,9 @@ export default function KontaktOssPage() {
               </div>
 
               <div className="mt-10 bg-brand-lightgray rounded-[20px] p-6">
-                <h3 className="font-bold text-brand-black mb-3">Vi hjelper deg i hele Agder</h3>
+                <h3 className="font-bold text-brand-black mb-3">Vi leverer over hele Norge</h3>
                 <p className="text-brand-darkgray text-sm leading-relaxed">
-                  Vi tar oppdrag i Kristiansand, Agder, Vest-Agder, Aust-Agder, Mandal, Farsund, Lillesand, Grimstad og over hele landet.
+                  Vi har base i Kristiansand og betjener kunder i hele Agder — Lillesand, Grimstad, Mandal, Arendal og omegn — samt resten av landet. Ta kontakt uansett hvor prosjektet ditt er.
                 </p>
               </div>
             </ScrollReveal>
