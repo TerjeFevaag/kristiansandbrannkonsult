@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-brand-darkgray/30 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-brand-white/40 text-sm">&copy; {new Date().getFullYear()} Kristiansand Brannkonsult AS. Alle rettigheter forbeholdt.</p>
+          <p className="text-brand-white/40 text-sm">&copy; {new Date().getFullYear()} Brannkonsult AS. Alle rettigheter forbeholdt.</p>
           <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={100} height={40} className="object-contain" />
         </div>
       </div>
