@@ -5,9 +5,9 @@ import { CheckCircle, Phone, Mail, MapPin } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Om Kristiansand Brannkonsult | Sentralt godkjent brannrådgiver',
+  title: 'Om Brannkonsult AS | Sentralt godkjent brannrådgiver i Kristiansand',
   description:
-    'Kristiansand Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder.',
+    'Brannkonsult AS er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/om-oss' },
 }
 
@@ -31,7 +31,7 @@ export default function OmOssPage() {
             <span>Om oss</span>
           </div>
           <h1 className="hero-2 text-brand-black text-4xl lg:text-5xl font-black max-w-2xl mx-auto">
-            Om Kristiansand Brannkonsult
+            Om Brannkonsult AS
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
             Sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013.
@@ -74,7 +74,7 @@ export default function OmOssPage() {
               <div className="relative rounded-[30px] overflow-hidden h-80 lg:h-96">
                 <Image
                   src="/images/Om-oss.jpg"
-                  alt="Kristiansand Brannkonsult team"
+                  alt="Brannkonsult AS team"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -128,7 +128,7 @@ export default function OmOssPage() {
           <ScrollReveal className="max-w-3xl">
             <h2 className="text-brand-black text-3xl font-black mb-5">Nøytral rådgiver</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Kristiansand Brannkonsult selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
+              Vi selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
               Mange av kundene våre er arkitekter og entreprenører som setter pris på at vi er lett tilgjengelige og raskt kan svare på spørsmål underveis i prosjektet — uten ekstra kostnad.
