@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Kontakt Kristiansand Brannkonsult | Få uforpliktende tilbud',
+  title: 'Kontakt Brannkonsult AS | FÃ¥ uforpliktende tilbud',
   description:
-    'Kontakt Kristiansand Brannkonsult for brannprosjektering i Kristiansand og Agder. Vi svarer innen 24 timer. Fastpris og sentralt godkjent.',
+    'Kontakt Brannkonsult AS for brannprosjektering i Kristiansand og Agder. Vi svarer innen 24 timer. Fastpris og sentralt godkjent.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/kontakt-oss' },
 }
 
@@ -23,7 +23,7 @@ export default function KontaktOssPage() {
             <span>Kontakt oss</span>
           </div>
           <h1 className="hero-2 text-brand-black text-4xl lg:text-5xl font-black max-w-2xl mx-auto">
-            Kontakt Kristiansand Brannkonsult
+            Kontakt Brannkonsult AS
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
             Ta kontakt for et uforpliktende tilbud. Vi svarer innen 24 timer.
@@ -36,7 +36,7 @@ export default function KontaktOssPage() {
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16">
             <ScrollReveal className="lg:w-[60%]">
-              <h2 className="text-brand-black text-2xl font-black mb-8">Send oss en forespørsel</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-8">Send oss en forespÃ¸rsel</h2>
               <ContactForm />
             </ScrollReveal>
 
@@ -84,8 +84,8 @@ export default function KontaktOssPage() {
                     <Clock size={18} className="text-brand-orange" />
                   </div>
                   <div>
-                    <p className="font-bold text-brand-black mb-1">Åpningstider</p>
-                    <p className="text-brand-darkgray">Man–Fre: 08:00–16:00</p>
+                    <p className="font-bold text-brand-black mb-1">Ã…pningstider</p>
+                    <p className="text-brand-darkgray">Manâ€“Fre: 08:00â€“16:00</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function KontaktOssPage() {
               <div className="mt-10 bg-brand-lightgray rounded-[20px] p-6">
                 <h3 className="font-bold text-brand-black mb-3">Vi leverer over hele Norge</h3>
                 <p className="text-brand-darkgray text-sm leading-relaxed">
-                  Vi har base i Kristiansand og betjener kunder i hele Agder — Lillesand, Grimstad, Mandal, Arendal og omegn — samt resten av landet. Ta kontakt uansett hvor prosjektet ditt er.
+                  Vi har base i Kristiansand og betjener kunder i hele Agder â€” Lillesand, Grimstad, Mandal, Arendal og omegn â€” samt resten av landet. Ta kontakt uansett hvor prosjektet ditt er.
                 </p>
               </div>
             </ScrollReveal>
@@ -103,3 +103,4 @@ export default function KontaktOssPage() {
     </>
   )
 }
+

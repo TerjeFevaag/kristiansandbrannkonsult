@@ -1,41 +1,41 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Branninspeksjon i Kristiansand | Kristiansand Brannkonsult',
+  title: 'Branninspeksjon i Kristiansand | Brannkonsult AS',
   description:
-    'Branninspeksjon i Kristiansand — vi hjelper borettslag, sameier og næringsbygg etter pålegg fra branntilsyn. Tilstandsrapport og handlingsplan. Sentralt godkjent.',
+    'Branninspeksjon i Kristiansand â€” vi hjelper borettslag, sameier og nÃ¦ringsbygg etter pÃ¥legg fra branntilsyn. Tilstandsrapport og handlingsplan. Sentralt godkjent.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/branninspeksjon' },
 }
 
 const faqItems = [
   {
-    question: 'Hva er forskjellen på branntilsyn og branninspeksjon?',
+    question: 'Hva er forskjellen pÃ¥ branntilsyn og branninspeksjon?',
     answer:
-      'Branntilsyn utføres av brann- og redningsetaten og er en myndighetskontroll. Branninspeksjon er en grundigere gjennomgang utført av oss som uavhengig rådgiver — vi kartlegger alle branntekniske forhold og utarbeider en handlingsplan.',
+      'Branntilsyn utfÃ¸res av brann- og redningsetaten og er en myndighetskontroll. Branninspeksjon er en grundigere gjennomgang utfÃ¸rt av oss som uavhengig rÃ¥dgiver â€” vi kartlegger alle branntekniske forhold og utarbeider en handlingsplan.',
   },
   {
     question: 'Hvem er ansvarlig for brannsikkerheten i et sameie?',
     answer:
-      'Styret i sameiet er ansvarlig for at fellesarealer og byggets brannsikkerhet ivaretas. Enkeltbeboere er ansvarlige for sine enheter. Vi kan bistå styret med å oppfylle kravene.',
+      'Styret i sameiet er ansvarlig for at fellesarealer og byggets brannsikkerhet ivaretas. Enkeltbeboere er ansvarlige for sine enheter. Vi kan bistÃ¥ styret med Ã¥ oppfylle kravene.',
   },
   {
     question: 'Hva skjer hvis bygget ikke oppfyller kravene?',
     answer:
-      'Kommunen kan gi pålegg om utbedring med frist. Vi hjelper deg med å forstå pålegget, prioritere tiltakene og dokumentere at utbedringene er gjennomført.',
+      'Kommunen kan gi pÃ¥legg om utbedring med frist. Vi hjelper deg med Ã¥ forstÃ¥ pÃ¥legget, prioritere tiltakene og dokumentere at utbedringene er gjennomfÃ¸rt.',
   },
   {
     question: 'Hva koster en branninspeksjon?',
     answer:
-      'Prisen avhenger av byggets størrelse og kompleksitet. Vi leverer branninspeksjon over hele landet — fra Kristiansand og Agder til resten av Norge. Kontakt oss for et uforpliktende pristilbud.',
+      'Prisen avhenger av byggets stÃ¸rrelse og kompleksitet. Vi leverer branninspeksjon over hele landet â€” fra Kristiansand og Agder til resten av Norge. Kontakt oss for et uforpliktende pristilbud.',
   },
   {
     question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
     answer:
-      'Forskrift om brannforebygging krever at alle byggverk skal ha et sikkerhetsnivå tilsvarende BF85 (Byggforskrift 1985). Eldre bygninger som ikke oppfyller dette må oppgraderes. Vi vurderer bygg over hele landet og gir deg en klar anbefaling.',
+      'Forskrift om brannforebygging krever at alle byggverk skal ha et sikkerhetsnivÃ¥ tilsvarende BF85 (Byggforskrift 1985). Eldre bygninger som ikke oppfyller dette mÃ¥ oppgraderes. Vi vurderer bygg over hele landet og gir deg en klar anbefaling.',
   },
 ]
 
@@ -62,8 +62,8 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Branninspeksjon',
-  description: 'Branninspeksjon og tilstandsvurdering av brannsikkerhet for borettslag, sameier og næringsbygg i Kristiansand og Agder.',
-  provider: { '@type': 'LocalBusiness', name: 'Kristiansand Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
+  description: 'Branninspeksjon og tilstandsvurdering av brannsikkerhet for borettslag, sameier og nÃ¦ringsbygg i Kristiansand og Agder.',
+  provider: { '@type': 'LocalBusiness', name: 'Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
   areaServed: ['Kristiansand', 'Lillesand', 'Grimstad', 'Mandal', 'Arendal', 'Agder'],
   url: 'https://www.kristiansandbrannkonsult.no/branninspeksjon',
 }
@@ -86,7 +86,7 @@ export default function BranninspeksjonPage() {
             Branninspeksjon i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Vi hjelper deg etter pålegg fra branntilsyn og kartlegger brannsikkerheten i din bygning.
+            Vi hjelper deg etter pÃ¥legg fra branntilsyn og kartlegger brannsikkerheten i din bygning.
           </p>
         </div>
       </section>
@@ -98,29 +98,29 @@ export default function BranninspeksjonPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning i Kristiansand? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
+                  Har kommunen vÃ¦rt pÃ¥ branntilsyn, eller Ã¸nsker du Ã¥ kartlegge brannsikkerheten i en eldre bygning i Kristiansand? Vi hjelper borettslag, sameier, nÃ¦ringsbygg og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Forskrift om brannforebygging krever at alle byggverk har et brannsikkerhetsnivå tilsvarende det som gjaldt ved byggetidspunktet, minimum BF85 (Byggforskrift av 1985). Eldre bygg som ikke oppfyller dette kravet, skal oppgraderes. Eier er ansvarlig for at oppgradering gjennomføres.
+                  Forskrift om brannforebygging krever at alle byggverk har et brannsikkerhetsnivÃ¥ tilsvarende det som gjaldt ved byggetidspunktet, minimum BF85 (Byggforskrift av 1985). Eldre bygg som ikke oppfyller dette kravet, skal oppgraderes. Eier er ansvarlig for at oppgradering gjennomfÃ¸res.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Brann- og redningsetatens oppgave</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Brannvesenet gjennomfører stikkprøvebaserte tilsyn og kan ikke gi en fullstendig gjennomgang av alle branntekniske forhold. Det er byggeiers ansvar å sørge for at alle krav er oppfylt — uavhengig av om brannvesenet har vært på tilsyn eller ikke.
+                  Brannvesenet gjennomfÃ¸rer stikkprÃ¸vebaserte tilsyn og kan ikke gi en fullstendig gjennomgang av alle branntekniske forhold. Det er byggeiers ansvar Ã¥ sÃ¸rge for at alle krav er oppfylt â€” uavhengig av om brannvesenet har vÃ¦rt pÃ¥ tilsyn eller ikke.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i vår branninspeksjon?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngÃ¥r i vÃ¥r branninspeksjon?</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Visuell inspeksjon av alle brannceller, rømningsveier og tekniske installasjoner',
+                    'Visuell inspeksjon av alle brannceller, rÃ¸mningsveier og tekniske installasjoner',
                     'Gjennomgang av eksisterende dokumentasjon',
                     'Skriftlig tilstandsrapport med alle funn',
                     'Prioritert handlingsplan for utbedring',
@@ -136,11 +136,11 @@ export default function BranninspeksjonPage() {
 
               <ScrollReveal>
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8 border-l-4 border-brand-orange">
-                  <h3 className="font-bold text-brand-black mb-2">Typisk ordlyd fra brannvesenet ved pålegg:</h3>
+                  <h3 className="font-bold text-brand-black mb-2">Typisk ordlyd fra brannvesenet ved pÃ¥legg:</h3>
                   <p className="text-brand-darkgray italic text-sm leading-relaxed">
-                    &laquo;Det er avdekket mangler ved brannsikkerheten i bygget. Eier pålegges å utarbeide en tilstandsrapport og gjennomføre nødvendige tiltak innen [dato].&raquo;
+                    &laquo;Det er avdekket mangler ved brannsikkerheten i bygget. Eier pÃ¥legges Ã¥ utarbeide en tilstandsrapport og gjennomfÃ¸re nÃ¸dvendige tiltak innen [dato].&raquo;
                   </p>
-                  <p className="text-brand-darkgray text-sm mt-3">Vi hjelper deg med å oppfylle pålegget raskt og kostnadseffektivt.</p>
+                  <p className="text-brand-darkgray text-sm mt-3">Vi hjelper deg med Ã¥ oppfylle pÃ¥legget raskt og kostnadseffektivt.</p>
                 </div>
               </ScrollReveal>
 
@@ -148,19 +148,19 @@ export default function BranninspeksjonPage() {
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
                   <h3 className="font-bold text-brand-black text-lg mb-2">Pris</h3>
                   <p className="text-brand-darkgray">
-                    Fra ca. <strong className="text-brand-black">8 000 kr</strong> ekskl. mva. for enklere bygg. Prisen avhenger av byggets størrelse og kompleksitet. Alltid fastpris.
+                    Fra ca. <strong className="text-brand-black">8 000 kr</strong> ekskl. mva. for enklere bygg. Prisen avhenger av byggets stÃ¸rrelse og kompleksitet. Alltid fastpris.
                   </p>
                 </div>
               </ScrollReveal>
 
               <ScrollReveal>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Vi utfører branninspeksjon i Kristiansand og hele Agder — Lillesand, Grimstad, Mandal, Arendal og omegn. Ta kontakt for et uforpliktende tilbud.
+                  Vi utfÃ¸rer branninspeksjon i Kristiansand og hele Agder â€” Lillesand, Grimstad, Mandal, Arendal og omegn. Ta kontakt for et uforpliktende tilbud.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spørsmål</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spÃ¸rsmÃ¥l</h2>
               </ScrollReveal>
               <ScrollReveal delay={80} variant="fade">
                 <FAQAccordion items={faqItems} />
@@ -225,7 +225,7 @@ export default function BranninspeksjonPage() {
               Bestill branninspeksjon i Kristiansand
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
-              Få tilbud nå
+              FÃ¥ tilbud nÃ¥
             </Link>
           </div>
         </section>
@@ -233,3 +233,4 @@ export default function BranninspeksjonPage() {
     </>
   )
 }
+

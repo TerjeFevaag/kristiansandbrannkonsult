@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Lato, Dancing_Script } from 'next/font/google'
 import './globals.css'
 import TopBar from '@/components/TopBar'
@@ -21,18 +21,18 @@ const dancing = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kristiansandbrannkonsult.no'),
-  title: 'Brannprosjektering i Kristiansand | Kristiansand Brannkonsult',
+  title: 'Brannprosjektering i Kristiansand | Brannkonsult AS',
   description:
-    'Kristiansand Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: {
     canonical: 'https://www.kristiansandbrannkonsult.no',
   },
   openGraph: {
-    title: 'Brannprosjektering i Kristiansand | Kristiansand Brannkonsult',
+    title: 'Brannprosjektering i Kristiansand | Brannkonsult AS',
     description:
-      'Kristiansand Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder.',
+      'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder.',
     url: 'https://www.kristiansandbrannkonsult.no',
-    siteName: 'Kristiansand Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
         url: '/images/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kristiansand Brannkonsult',
+        alt: 'Brannkonsult AS',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Brannprosjektering i Kristiansand | Kristiansand Brannkonsult',
-    description: 'Kristiansand Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder. Sentralt godkjent foretak.',
+    title: 'Brannprosjektering i Kristiansand | Brannkonsult AS',
+    description: 'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Kristiansand og Agder. Sentralt godkjent foretak.',
     images: ['/images/hero.jpg'],
   },
 }
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Kristiansand Brannkonsult AS',
+  name: 'Brannkonsult AS',
   description: 'Brannprosjektering og brannkonsept i Kristiansand',
   telephone: '+4748481914',
   email: 'post@kristiansandbrannkonsult.no',
@@ -85,10 +85,10 @@ const jsonLd = {
   review: [
     { '@type': 'Review', author: { '@type': 'Person', name: 'Kirsti Andresen' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Lett å få kontakt med firmaet på ulike spørsmål som dukker opp underveis. Jeg har kun hatt gode opplevelser, selv om ikke alt var helt klart for meg som ufaglært.' },
     { '@type': 'Review', author: { '@type': 'Person', name: 'Heidi Spinnangr' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Veldig fornøyd!' },
-    { '@type': 'Review', author: { '@type': 'Organization', name: 'Hagelin Byggservice' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Kristiansand Brannkonsult er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet.' },
+    { '@type': 'Review', author: { '@type': 'Organization', name: 'Hagelin Byggservice' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet.' },
     { '@type': 'Review', author: { '@type': 'Person', name: 'Jonathan Steinsvik' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Ga rask tilbakemelding ved første kontakt. Leverte til avtalt tid og pris. Høy kvalitet på arbeidet.' },
     { '@type': 'Review', author: { '@type': 'Organization', name: 'Jon Cederbrand Arkitektur AS' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.' },
-    { '@type': 'Review', author: { '@type': 'Organization', name: 'Ventilasjon AS' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Vi er veldig fornøyde med leveransen fra Kristiansand Brannkonsult AS. God service og rask levering.' },
+    { '@type': 'Review', author: { '@type': 'Organization', name: 'Ventilasjon AS' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Vi er veldig fornøyde med leveransen fra Brannkonsult AS. God service og rask levering.' },
   ],
 }
 
@@ -114,3 +114,4 @@ export default function RootLayout({
     </html>
   )
 }
+

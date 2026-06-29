@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Riktig brannslokkeapparat i boligen | Kristiansand Brannkonsult',
+  title: 'Riktig brannslokkeapparat i boligen | Brannkonsult AS',
   description:
     'Hvilken type brannslokker trenger du i hjemmet? Vi forklarer krav til brannslokking, forskjellen mellom pulver og skum, og hvordan du bruker dem riktig.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/artikler/brannslokker' },
@@ -27,7 +27,7 @@ export default function BrannslokkePage() {
             Har du riktig brannslokkeapparat i boligen?
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Mange har et brannslokkeapparat, men færre vet om de har riktig type — eller om det fungerer.
+            Mange har et brannslokkeapparat, men fÃ¦rre vet om de har riktig type â€” eller om det fungerer.
           </p>
         </div>
       </section>
@@ -50,58 +50,58 @@ export default function BrannslokkePage() {
 
           <ScrollReveal>
             <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-              Et brannslokkeapparat kan være forskjellen mellom en liten skade og en katastrofe. Men et feil apparat — eller et apparat som ikke vedlikeholdes — kan gi deg falsk trygghet. Her er det du trenger å vite om brannslokkere i boligen.
+              Et brannslokkeapparat kan vÃ¦re forskjellen mellom en liten skade og en katastrofe. Men et feil apparat â€” eller et apparat som ikke vedlikeholdes â€” kan gi deg falsk trygghet. Her er det du trenger Ã¥ vite om brannslokkere i boligen.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Hva krever loven?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-6">
-              Forskrift om brannforebygging krever at alle boliger skal ha minst ett godkjent, håndholdt slokkeredskap. I praksis betyr dette et brannslokkeapparat eller en brannslange. Apparatet skal ha tilstrekkelig kapasitet til å bekjempe en begynnende brann.
+              Forskrift om brannforebygging krever at alle boliger skal ha minst ett godkjent, hÃ¥ndholdt slokkeredskap. I praksis betyr dette et brannslokkeapparat eller en brannslange. Apparatet skal ha tilstrekkelig kapasitet til Ã¥ bekjempe en begynnende brann.
             </p>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              For boliger anbefales et apparat på minimum 6 kg pulver eller 6 liter skum. I tillegg bør du ha et brannteppe tilgjengelig på kjøkkenet.
+              For boliger anbefales et apparat pÃ¥ minimum 6 kg pulver eller 6 liter skum. I tillegg bÃ¸r du ha et brannteppe tilgjengelig pÃ¥ kjÃ¸kkenet.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Pulverapparatet — fordeler og ulemper</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Pulverapparatet â€” fordeler og ulemper</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Pulverapparater er de vanligste i norske boliger. De er effektive mot de fleste branntyper (klasse A, B og C) og har lang holdbarhet. Ulempen er at pulveret er svært skadelig for elektronikk og inventar, og oppryddingen etter bruk kan være krevende.
+              Pulverapparater er de vanligste i norske boliger. De er effektive mot de fleste branntyper (klasse A, B og C) og har lang holdbarhet. Ulempen er at pulveret er svÃ¦rt skadelig for elektronikk og inventar, og oppryddingen etter bruk kan vÃ¦re krevende.
             </p>
             <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
               <p className="font-bold text-brand-black mb-2">Egnet for:</p>
               <ul className="text-brand-darkgray text-sm space-y-1">
-                <li>✓ Branner i faste stoffer (tre, papir, tekstil)</li>
-                <li>✓ Branner i væsker (bensin, olje)</li>
-                <li>✓ Branner i gasser</li>
-                <li>✗ Ikke egnet nær sensitiv elektronikk</li>
+                <li>âœ“ Branner i faste stoffer (tre, papir, tekstil)</li>
+                <li>âœ“ Branner i vÃ¦sker (bensin, olje)</li>
+                <li>âœ“ Branner i gasser</li>
+                <li>âœ— Ikke egnet nÃ¦r sensitiv elektronikk</li>
               </ul>
             </div>
           </ScrollReveal>
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Skumapparatet — mer skånsomt</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Skumapparatet â€” mer skÃ¥nsomt</h2>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              Skumapparater er mer skånsomme mot inventar og egner seg godt i stue og kjøkken. De er effektive mot branner i faste stoffer og brennbare væsker, men ikke mot branner i gasser eller elektriske installasjoner under spenning. Skumapparater er litt dyrere enn pulverapparater, men kan være et godt valg for boliger med mye verdifullt inventar.
+              Skumapparater er mer skÃ¥nsomme mot inventar og egner seg godt i stue og kjÃ¸kken. De er effektive mot branner i faste stoffer og brennbare vÃ¦sker, men ikke mot branner i gasser eller elektriske installasjoner under spenning. Skumapparater er litt dyrere enn pulverapparater, men kan vÃ¦re et godt valg for boliger med mye verdifullt inventar.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Vedlikehold og kontroll</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Et brannslokkeapparat som ikke er vedlikeholdt kan svikte når du trenger det mest. Følg disse retningslinjene:
+              Et brannslokkeapparat som ikke er vedlikeholdt kan svikte nÃ¥r du trenger det mest. FÃ¸lg disse retningslinjene:
             </p>
             <ul className="space-y-3 mb-8 text-brand-darkgray">
               {[
-                'Sjekk trykkmåleren månedlig — pilen skal stå i det grønne feltet',
-                'Rist apparatet noen ganger i måneden for å løsne pulveret',
-                'Send apparatet til godkjent servicested hvert 5. år',
-                'Skift ut apparatet etter 10 år, selv om det ser ok ut',
-                'Heng apparatet synlig og lett tilgjengelig — ikke gjemt i et skap',
+                'Sjekk trykkmÃ¥leren mÃ¥nedlig â€” pilen skal stÃ¥ i det grÃ¸nne feltet',
+                'Rist apparatet noen ganger i mÃ¥neden for Ã¥ lÃ¸sne pulveret',
+                'Send apparatet til godkjent servicested hvert 5. Ã¥r',
+                'Skift ut apparatet etter 10 Ã¥r, selv om det ser ok ut',
+                'Heng apparatet synlig og lett tilgjengelig â€” ikke gjemt i et skap',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-brand-orange font-bold mt-1">✓</span>
+                  <span className="text-brand-orange font-bold mt-1">âœ“</span>
                   {item}
                 </li>
               ))}
@@ -115,14 +115,14 @@ export default function BrannslokkePage() {
             </p>
             <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
               <ul className="space-y-2 text-brand-darkgray">
-                <li><strong className="text-brand-black">P — Pull:</strong> Trekk ut sikringspinnen</li>
-                <li><strong className="text-brand-black">A — Aim:</strong> Sikt mot bunnen av flammene</li>
-                <li><strong className="text-brand-black">S — Squeeze:</strong> Klem utløserhåndtaket</li>
-                <li><strong className="text-brand-black">S — Sweep:</strong> Sveip fra side til side</li>
+                <li><strong className="text-brand-black">P â€” Pull:</strong> Trekk ut sikringspinnen</li>
+                <li><strong className="text-brand-black">A â€” Aim:</strong> Sikt mot bunnen av flammene</li>
+                <li><strong className="text-brand-black">S â€” Squeeze:</strong> Klem utlÃ¸serhÃ¥ndtaket</li>
+                <li><strong className="text-brand-black">S â€” Sweep:</strong> Sveip fra side til side</li>
               </ul>
             </div>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              Viktig: Ha alltid ryggen mot en nødutgang når du slokker. Dersom brannen ikke sloknes raskt, forlat bygningen og ring 110.
+              Viktig: Ha alltid ryggen mot en nÃ¸dutgang nÃ¥r du slokker. Dersom brannen ikke sloknes raskt, forlat bygningen og ring 110.
             </p>
           </ScrollReveal>
 
@@ -130,7 +130,7 @@ export default function BrannslokkePage() {
             <div className="bg-brand-lightgray rounded-[20px] p-6">
               <p className="text-brand-darkgray font-medium mb-2">Trenger du brannsikkerhetsvurdering for din bygning?</p>
               <p className="text-brand-darkgray text-sm leading-relaxed">
-                Vi er sentralt godkjent brannrådgiver og hjelper deg med alle branntekniske spørsmål. Ta kontakt for en uforpliktende prat.
+                Vi er sentralt godkjent brannrÃ¥dgiver og hjelper deg med alle branntekniske spÃ¸rsmÃ¥l. Ta kontakt for en uforpliktende prat.
               </p>
             </div>
           </ScrollReveal>
@@ -153,3 +153,4 @@ export default function BrannslokkePage() {
     </>
   )
 }
+

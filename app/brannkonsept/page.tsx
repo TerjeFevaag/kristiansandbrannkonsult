@@ -1,51 +1,51 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { FileText, Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Brannkonsept i Kristiansand | Kristiansand Brannkonsult',
+  title: 'Brannkonsept i Kristiansand | Brannkonsult AS',
   description:
-    'Kristiansand Brannkonsult utarbeider brannkonsept i Kristiansand og Agder. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr inkl. branntegninger. Fastpris alltid.',
+    'Brannkonsult AS utarbeider brannkonsept i Kristiansand og Agder. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr inkl. branntegninger. Fastpris alltid.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/brannkonsept' },
 }
 
 const faqItems = [
   {
-    question: 'Hva trenger jeg til mitt prosjekt — brannkonsept eller brannteknisk notat?',
+    question: 'Hva trenger jeg til mitt prosjekt â€” brannkonsept eller brannteknisk notat?',
     answer:
-      'Et brannkonsept er en mer helhetlig rapport som beskriver brannsikkerhetsnivået til hele byggverket. Et brannteknisk notat er enklere og brukes for mindre tiltak. Vi veileder deg til riktig løsning for ditt prosjekt — ta kontakt for en gratis vurdering.',
+      'Et brannkonsept er en mer helhetlig rapport som beskriver brannsikkerhetsnivÃ¥et til hele byggverket. Et brannteknisk notat er enklere og brukes for mindre tiltak. Vi veileder deg til riktig lÃ¸sning for ditt prosjekt â€” ta kontakt for en gratis vurdering.',
   },
   {
-    question: 'Er befaring nødvendig for brannkonsept?',
+    question: 'Er befaring nÃ¸dvendig for brannkonsept?',
     answer:
-      'For nybygg og enklere saker er det sjelden nødvendig med befaring. Takket være digitale kartdata og gode tegningsunderlag kan vi i mange tilfeller utarbeide brannkonseptet uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
+      'For nybygg og enklere saker er det sjelden nÃ¸dvendig med befaring. Takket vÃ¦re digitale kartdata og gode tegningsunderlag kan vi i mange tilfeller utarbeide brannkonseptet uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
   },
   {
     question: 'Hva koster et brannkonsept?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris uansett hvor i landet prosjektet befinner seg. Send oss informasjon om prosjektet for et nøyaktig tilbud.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris uansett hvor i landet prosjektet befinner seg. Send oss informasjon om prosjektet for et nÃ¸yaktig tilbud.',
   },
   {
     question: 'Leverer dere brannkonsept over hele Norge?',
     answer:
-      'Ja — vi har base i Kristiansand, men tar oppdrag i hele landet. De fleste brannkonsepter kan utarbeides digitalt uten befaring, noe som gjør det like enkelt å jobbe med prosjekter i Oslo, Bergen eller Tromsø som i Agder.',
+      'Ja â€” vi har base i Kristiansand, men tar oppdrag i hele landet. De fleste brannkonsepter kan utarbeides digitalt uten befaring, noe som gjÃ¸r det like enkelt Ã¥ jobbe med prosjekter i Oslo, Bergen eller TromsÃ¸ som i Agder.',
   },
   {
-    question: 'Tilbyr dere håndverkertjenester?',
+    question: 'Tilbyr dere hÃ¥ndverkertjenester?',
     answer:
-      'Nei — vi er en nøytral rådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen vår alltid er uavhengig og i ditt beste interesse.',
+      'Nei â€” vi er en nÃ¸ytral rÃ¥dgiver og selger ingen produkter eller hÃ¥ndverkertjenester. Dette sikrer at rÃ¥dgivningen vÃ¥r alltid er uavhengig og i ditt beste interesse.',
   },
   {
-    question: 'Hva trengs for å få et pristilbud?',
+    question: 'Hva trengs for Ã¥ fÃ¥ et pristilbud?',
     answer:
-      'For å gi et nøyaktig tilbud trenger vi: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss så sender vi tilbud innen 24 timer.',
+      'For Ã¥ gi et nÃ¸yaktig tilbud trenger vi: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss sÃ¥ sender vi tilbud innen 24 timer.',
   },
   {
-    question: 'Hvor lang tid tar det å utarbeide et brannkonsept?',
+    question: 'Hvor lang tid tar det Ã¥ utarbeide et brannkonsept?',
     answer:
-      'Leveringstid avhenger av prosjektets omfang og vår arbeidsbelastning. For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt bestilling og komplett underlag. Har du tidsfrist, oppgi dette i forespørselen.',
+      'Leveringstid avhenger av prosjektets omfang og vÃ¥r arbeidsbelastning. For de fleste prosjekter leverer vi innen 5â€“10 virkedager etter mottatt bestilling og komplett underlag. Har du tidsfrist, oppgi dette i forespÃ¸rselen.',
   },
 ]
 
@@ -73,7 +73,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Brannkonsept',
   description: 'Utarbeidelse av brannkonsept for byggesaker i Kristiansand og Agder. Sentralt godkjent TKL 1+2. Fastpris alltid.',
-  provider: { '@type': 'LocalBusiness', name: 'Kristiansand Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
+  provider: { '@type': 'LocalBusiness', name: 'Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
   areaServed: ['Kristiansand', 'Lillesand', 'Grimstad', 'Mandal', 'Arendal', 'Agder'],
   url: 'https://www.kristiansandbrannkonsult.no/brannkonsept',
   offers: { '@type': 'Offer', price: '15000', priceCurrency: 'NOK', description: 'Fra ca. 15 000 kr ekskl. mva., tiltaksklasse 2' },
@@ -110,23 +110,23 @@ export default function BrannkonseptPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Kristiansand og omegn med å utarbeide komplette brannkonsept til fast pris.
+                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivÃ¥. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon pÃ¥ brannkonseptnivÃ¥ â€” en helhetlig overordnet plan som ivaretar brannsikkerheten bÃ¥de for det omsÃ¸kte tiltaket og den Ã¸vrige bygningsmassen. Vi hjelper private, arkitekter, entreprenÃ¸rer og utbyggere i Kristiansand og omegn med Ã¥ utarbeide komplette brannkonsept til fast pris.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Hva inneholder et brannkonsept?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-6">
-                  Et komplett brannkonsept fra Kristiansand Brannkonsult inneholder:
+                  Et komplett brannkonsept fra Brannkonsult AS inneholder:
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
                     'Fastsettelse av risikoklasse (RKL) for alle bygningsdeler',
                     'Fastsettelse av brannklasse (BKL)',
                     'Oppdeling i brannceller og brannseksjoner',
-                    'Beskrivelse av rømningsveier og røykventilasjon',
-                    'Branntekniske tegninger (plantegninger med brannceller, rømning m.m.)',
-                    'Vurdering av bærende og skille konstruksjoner',
+                    'Beskrivelse av rÃ¸mningsveier og rÃ¸ykventilasjon',
+                    'Branntekniske tegninger (plantegninger med brannceller, rÃ¸mning m.m.)',
+                    'Vurdering av bÃ¦rende og skille konstruksjoner',
                     'Krav til branntekniske installasjoner',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
@@ -140,10 +140,10 @@ export default function BrannkonseptPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Brannklasser og risikoklasser</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Alle bygninger i Norge klassifiseres etter risikoklasse (RKL 1–6) og brannklasse (BKL 1–4). Risikoklassen bestemmes av hva bygget brukes til og hvilke konsekvenser en brann kan ha. Brannklassen fastsettes ut fra risikoklasse og antall etasjer.
+                  Alle bygninger i Norge klassifiseres etter risikoklasse (RKL 1â€“6) og brannklasse (BKL 1â€“4). Risikoklassen bestemmes av hva bygget brukes til og hvilke konsekvenser en brann kan ha. Brannklassen fastsettes ut fra risikoklasse og antall etasjer.
                 </p>
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
-                  <h3 className="font-bold text-brand-black mb-3">Eksempler på risikoklasser:</h3>
+                  <h3 className="font-bold text-brand-black mb-3">Eksempler pÃ¥ risikoklasser:</h3>
                   <ul className="space-y-2 text-brand-darkgray text-sm">
                     <li><strong>RKL 1:</strong> Garasjer, lager (ingen personopphold)</li>
                     <li><strong>RKL 2:</strong> Boliger med evakueringsmulighet fra egen enhet</li>
@@ -159,10 +159,10 @@ export default function BrannkonseptPage() {
                 <ul className="space-y-3 mb-8">
                   {[
                     'Utarbeidelse av komplett brannkonsept',
-                    'Branntekniske tegninger (brannceller, rømningsveier)',
+                    'Branntekniske tegninger (brannceller, rÃ¸mningsveier)',
                     'Ansvarsrett overfor kommunen i tiltaksklasse 1 og 2',
-                    'Fastpris — ingen skjulte kostnader',
-                    'Levering innen 5–10 virkedager',
+                    'Fastpris â€” ingen skjulte kostnader',
+                    'Levering innen 5â€“10 virkedager',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -188,12 +188,12 @@ export default function BrannkonseptPage() {
 
               <ScrollReveal>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Vi utarbeider brannkonsept for byggeprosjekter i Kristiansand og hele Agder — Lillesand, Grimstad, Arendal, Mandal og omegn. Ta kontakt for en gratis vurdering.
+                  Vi utarbeider brannkonsept for byggeprosjekter i Kristiansand og hele Agder â€” Lillesand, Grimstad, Arendal, Mandal og omegn. Ta kontakt for en gratis vurdering.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spørsmål</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spÃ¸rsmÃ¥l</h2>
               </ScrollReveal>
               <ScrollReveal delay={80} variant="fade">
                 <FAQAccordion items={faqItems} />
@@ -205,7 +205,7 @@ export default function BrannkonseptPage() {
               <ScrollReveal delay={200}>
                 <div className="sticky top-24">
                   <div className="bg-brand-dark rounded-[30px] p-8 text-brand-white">
-                    <h3 className="font-bold text-xl mb-3">Få uforpliktende tilbud</h3>
+                    <h3 className="font-bold text-xl mb-3">FÃ¥ uforpliktende tilbud</h3>
                     <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
                       Kontakt oss for en gratis vurdering av ditt brannkonseptbehov. Vi svarer innen 24 timer.
                     </p>
@@ -257,10 +257,10 @@ export default function BrannkonseptPage() {
         <section className="bg-brand-dark py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for uforpliktende tilbud på brannkonsept i Kristiansand
+              Kontakt oss for uforpliktende tilbud pÃ¥ brannkonsept i Kristiansand
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
-              Få tilbud nå
+              FÃ¥ tilbud nÃ¥
             </Link>
           </div>
         </section>
@@ -268,3 +268,4 @@ export default function BrannkonseptPage() {
     </>
   )
 }
+
