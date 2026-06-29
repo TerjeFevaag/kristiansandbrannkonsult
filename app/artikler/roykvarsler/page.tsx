@@ -4,7 +4,7 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Riktig rÃ¸ykvarsler redder liv | Brannkonsult AS',
+  title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
   description:
     'Krav til rÃ¸ykvarslere i norske boliger, forskjellen mellom ionisasjons- og optiske varslere, og anbefalt plassering. Fra sentralt godkjent brannrÃ¥dgiver.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/artikler/roykvarsler' },
