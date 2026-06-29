@@ -6,7 +6,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
   description:
-    'LÃ¦r hvordan du forebygger pipebrann. Regelmessig feieservice, riktig ved og god trekk er nÃ¸kkelen. Tips fra sentralt godkjent brannrÃ¥dgiver i Kristiansand.',
+    'Lær hvordan du forebygger pipebrann. Regelmessig feieservice, riktig ved og god trekk er nøkkelen. Tips fra sentralt godkjent brannrådgiver i Kristiansand.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/artikler/pipebrann' },
 }
 

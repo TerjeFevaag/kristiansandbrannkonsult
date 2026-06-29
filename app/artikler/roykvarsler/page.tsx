@@ -6,7 +6,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
   description:
-    'Krav til rÃ¸ykvarslere i norske boliger, forskjellen mellom ionisasjons- og optiske varslere, og anbefalt plassering. Fra sentralt godkjent brannrÃ¥dgiver.',
+    'Krav til røykvarslere i norske boliger, forskjellen mellom ionisasjons- og optiske varslere, og anbefalt plassering. Fra sentralt godkjent brannrådgiver.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/artikler/roykvarsler' },
 }
 

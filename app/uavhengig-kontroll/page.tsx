@@ -5,9 +5,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll av brannkonsept i Kristiansand | Brannkonsult AS',
+  title: 'Uavhengig kontroll brann Kristiansand | Brannkonsult AS',
   description:
-    'Uavhengig kontroll (UK) av brannkonsept og brannprosjektering i Kristiansand og Agder. Sentralt godkjent. NÃ¸ytral part â€” vi selger ingen produkter.',
+    'Lovpålagt uavhengig kontroll (UK) av brannkonsept i Kristiansand og Agder. Tiltaksklasse 2 og høyere. Sentralt godkjent, nøytral rådgiver – vi selger ingen produkter. Få tilbud i dag.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/uavhengig-kontroll' },
 }
 

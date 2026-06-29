@@ -5,9 +5,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Branninspeksjon i Kristiansand | Brannkonsult AS',
+  title: 'Branninspeksjon Kristiansand – Pålegg fra tilsyn? | Brannkonsult AS',
   description:
-    'Branninspeksjon i Kristiansand â€” vi hjelper borettslag, sameier og nÃ¦ringsbygg etter pÃ¥legg fra branntilsyn. Tilstandsrapport og handlingsplan. Sentralt godkjent.',
+    'Fått pålegg etter branntilsyn i Kristiansand eller Agder? Vi hjelper borettslag, sameier og næringsbygg med branninspeksjon, tilstandsrapport og handlingsplan. Fra 8 000 kr. Sentralt godkjent.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/branninspeksjon' },
 }
 

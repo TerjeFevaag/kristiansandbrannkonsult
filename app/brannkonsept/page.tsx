@@ -5,9 +5,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Brannkonsept i Kristiansand | Brannkonsult AS',
+  title: 'Brannkonsept Kristiansand – Fra 15 000 kr | Brannkonsult AS',
   description:
-    'Brannkonsult AS utarbeider brannkonsept i Kristiansand og Agder. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr inkl. branntegninger. Fastpris alltid.',
+    'Trenger du brannkonsept i Kristiansand, Agder eller resten av Norge? Sentralt godkjent TKL 1+2. Fastpris fra 15 000 kr ekskl. mva., inkl. branntegninger. Levering 5–10 virkedager. Få tilbud i dag.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/brannkonsept' },
 }
 

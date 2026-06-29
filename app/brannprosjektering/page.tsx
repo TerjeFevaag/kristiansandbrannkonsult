@@ -5,9 +5,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Kristiansand | Brannkonsult AS',
+  title: 'Brannprosjektering Kristiansand – Fastpris | Brannkonsult AS',
   description:
-    'Brannprosjektering i Kristiansand og Agder. Sentralt godkjent TKL 1+2. Fast pris, rask levering. Tilbygg, bruksendring, ny boenhet. Kontakt oss i dag.',
+    'Brannprosjektering for tilbygg, bruksendring og nybygg i Kristiansand og Agder. Sentralt godkjent TKL 1+2. Fastpris fra 15 000 kr, levering innen 5–10 virkedager. Kontakt oss i dag.',
   alternates: { canonical: 'https://www.kristiansandbrannkonsult.no/brannprosjektering' },
 }
 
