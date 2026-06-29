@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -27,7 +27,7 @@ export default function PipebrannPage() {
             Forebygg pipebrann med enkle grep
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Er du i faresonen for Ã¥ fÃ¥ brann i skorsteinen? Her er det du trenger Ã¥ vite.
+            Er du i faresonen for å få brann i skorsteinen? Her er det du trenger å vite.
           </p>
         </div>
       </section>
@@ -50,35 +50,35 @@ export default function PipebrannPage() {
 
           <ScrollReveal>
             <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-              Pipebrann er en av de vanligste brannÃ¥rsakene i norske boliger, og kan oppstÃ¥ uten forvarsel. En pipebrann kan raskt spre seg til resten av huset og forÃ¥rsake store skader. Den gode nyheten er at pipebrann i stor grad kan forebygges med enkle tiltak.
+              Pipebrann er en av de vanligste brannårsakene i norske boliger, og kan oppstå uten forvarsel. En pipebrann kan raskt spre seg til resten av huset og forårsake store skader. Den gode nyheten er at pipebrann i stor grad kan forebygges med enkle tiltak.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Hva er en pipebrann?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-6">
-              En pipebrann oppstÃ¥r nÃ¥r belegg i skorsteinen â€” kjent som sot eller kreosot â€” antennes. Kreosot er et tjÃ¦reaktig stoff som dannes nÃ¥r ved ikke forbrenner fullstendig. Over tid bygger det seg opp i rÃ¸ykkanalen og kan antennes ved hÃ¸ye temperaturer. NÃ¥r det skjer, kan temperaturen i pipa stige til over 1000 grader Celsius.
+              En pipebrann oppstår når belegg i skorsteinen — kjent som sot eller kreosot — antennes. Kreosot er et tjæreaktig stoff som dannes når ved ikke forbrenner fullstendig. Over tid bygger det seg opp i røykkanalen og kan antennes ved høye temperaturer. Når det skjer, kan temperaturen i pipa stige til over 1000 grader Celsius.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Vanlige Ã¥rsaker til pipebrann</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Vanlige årsaker til pipebrann</h2>
             <ul className="space-y-3 mb-8 text-brand-darkgray">
               <li className="flex items-start gap-3">
-                <span className="text-brand-orange font-bold mt-1">â€¢</span>
-                <span><strong className="text-brand-black">Bruk av fuktig ved:</strong> Fuktig ved gir ufullstendig forbrenning og produserer mye kreosot. Bruk alltid tÃ¸rr ved med fuktighet under 20 prosent.</span>
+                <span className="text-brand-orange font-bold mt-1">•</span>
+                <span><strong className="text-brand-black">Bruk av fuktig ved:</strong> Fuktig ved gir ufullstendig forbrenning og produserer mye kreosot. Bruk alltid tørr ved med fuktighet under 20 prosent.</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-brand-orange font-bold mt-1">â€¢</span>
-                <span><strong className="text-brand-black">Lav brenningstemperatur:</strong> Ã… fylle ovnen halvfull og la den ulme pÃ¥ lav temperatur Ã¸ker kreosotdannelsen. Fyr heller i kortere perioder med god trekk og tÃ¸rr ved.</span>
+                <span className="text-brand-orange font-bold mt-1">•</span>
+                <span><strong className="text-brand-black">Lav brenningstemperatur:</strong> Å fylle ovnen halvfull og la den ulme på lav temperatur øker kreosotdannelsen. Fyr heller i kortere perioder med god trekk og tørr ved.</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-brand-orange font-bold mt-1">â€¢</span>
-                <span><strong className="text-brand-black">Manglende feieservice:</strong> Regelmessig feiing fjerner kreosot og sot fra skorsteinen. Oversalting av feietjenester er en vanlig Ã¥rsak til pipebrann.</span>
+                <span className="text-brand-orange font-bold mt-1">•</span>
+                <span><strong className="text-brand-black">Manglende feieservice:</strong> Regelmessig feiing fjerner kreosot og sot fra skorsteinen. Oversalting av feietjenester er en vanlig årsak til pipebrann.</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-brand-orange font-bold mt-1">â€¢</span>
-                <span><strong className="text-brand-black">Feil i skorsteinen:</strong> Sprekker og skader i rÃ¸ykkanalen kan gi dÃ¥rlig trekk og Ã¸ke risikoen for brann.</span>
+                <span className="text-brand-orange font-bold mt-1">•</span>
+                <span><strong className="text-brand-black">Feil i skorsteinen:</strong> Sprekker og skader i røykkanalen kan gi dårlig trekk og øke risikoen for brann.</span>
               </li>
             </ul>
           </ScrollReveal>
@@ -91,15 +91,15 @@ export default function PipebrannPage() {
             <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
               <ul className="space-y-3 text-brand-darkgray">
                 {[
-                  'Bruk alltid tÃ¸rr ved med fuktighet under 20%',
-                  'Fyr med god trekk â€” unngÃ¥ Ã¥ la ovnen ulme',
-                  'SÃ¸rg for regelmessig feieservice (minst Ã©n gang i Ã¥ret)',
-                  'Sjekk at rÃ¸ykmelderen fungerer i alle rom',
+                  'Bruk alltid tørr ved med fuktighet under 20%',
+                  'Fyr med god trekk — unngå å la ovnen ulme',
+                  'Sørg for regelmessig feieservice (minst én gang i året)',
+                  'Sjekk at røykmelderen fungerer i alle rom',
                   'Hold adkomsten til skorsteinen fri for hindringer',
-                  'UnngÃ¥ Ã¥ brenne avfall, impregnert tre eller plast i ovnen',
+                  'Unngå å brenne avfall, impregnert tre eller plast i ovnen',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="text-brand-orange font-bold mt-1">âœ“</span>
+                    <span className="text-brand-orange font-bold mt-1">✓</span>
                     {item}
                   </li>
                 ))}
@@ -108,27 +108,27 @@ export default function PipebrannPage() {
           </ScrollReveal>
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Hva gjÃ¸r du hvis pipebrann oppstÃ¥r?</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Hva gjør du hvis pipebrann oppstår?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Hvis du oppdager en pipebrann, ring 110 umiddelbart. Lukk lufttilfÃ¸rselen til ovnen for Ã¥ redusere oksygentilgangen, og evakuer bygningen. ForsÃ¸k ikke Ã¥ slokke brannen selv â€” rÃ¸yken og varmen fra en pipebrann er svÃ¦rt farlig.
+              Hvis du oppdager en pipebrann, ring 110 umiddelbart. Lukk lufttilførselen til ovnen for å redusere oksygentilgangen, og evakuer bygningen. Forsøk ikke å slokke brannen selv — røyken og varmen fra en pipebrann er svært farlig.
             </p>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              Etter en pipebrann bÃ¸r en fagmann inspisere skorsteinen grundig fÃ¸r den tas i bruk igjen. HÃ¸y temperatur kan ha skadet murfuger og rÃ¸ykkanal.
+              Etter en pipebrann bør en fagmann inspisere skorsteinen grundig før den tas i bruk igjen. Høy temperatur kan ha skadet murfuger og røykkanal.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Vedlikeholdsplan for skorsteinen</h2>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              En enkel Ã¥rsplan for vedlikehold av skorstein og ovn kan redde liv. Sjekk ovnsglass og pakning ved sesongstart, bestill feieservice en gang i Ã¥ret, og bytt batterier i rÃ¸ykvarslerne to ganger i Ã¥ret. Det tar 30 minutter og kan utgjÃ¸re hele forskjellen.
+              En enkel årsplan for vedlikehold av skorstein og ovn kan redde liv. Sjekk ovnsglass og pakning ved sesongstart, bestill feieservice en gang i året, og bytt batterier i røykvarslerne to ganger i året. Det tar 30 minutter og kan utgjøre hele forskjellen.
             </p>
           </ScrollReveal>
 
           <ScrollReveal variant="fade">
             <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
-              <p className="text-brand-darkgray font-medium mb-2">Har du spÃ¸rsmÃ¥l om brannsikkerhet i din bygning?</p>
+              <p className="text-brand-darkgray font-medium mb-2">Har du spørsmål om brannsikkerhet i din bygning?</p>
               <p className="text-brand-darkgray text-sm leading-relaxed">
-                Som sentralt godkjent brannrÃ¥dgiver hjelper vi deg med brannprosjektering, branninspeksjon og brannkonsept. Ta kontakt for en gratis vurdering.
+                Som sentralt godkjent brannrådgiver hjelper vi deg med brannprosjektering, branninspeksjon og brannkonsept. Ta kontakt for en gratis vurdering.
               </p>
             </div>
           </ScrollReveal>
@@ -151,4 +151,3 @@ export default function PipebrannPage() {
     </>
   )
 }
-
