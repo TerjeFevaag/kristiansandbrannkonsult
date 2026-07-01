@@ -140,7 +140,7 @@ export default function BrannkonseptPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Brannklasser og risikoklasser</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Alle bygninger i Norge klassifiseres etter risikoklasse (RKL 1–6) og brannklasse (BKL 1–4). Risikoklassen bestemmes av hva bygget brukes til og hvilke konsekvenser en brann kan ha. Brannklassen fastsettes ut fra risikoklasse og antall etasjer.
+                  Alle bygninger i Norge klassifiseres etter risikoklasse (RKL 1–6) og brannklasse (BKL 1–4). Risikoklassen bestemmes av hva bygget brukes til og hvilke konsekvenser en brann kan ha. Brannklassen fastsettes ut fra risikoklasse og antall etasjer. En grundig innføring i <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">hva et brannkonsept inneholder og når det kreves</a> finner du hos brannkonsult.no.
                 </p>
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
                   <h3 className="font-bold text-brand-black mb-3">Eksempler på risikoklasser:</h3>

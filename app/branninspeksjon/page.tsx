@@ -105,7 +105,7 @@ export default function BranninspeksjonPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Forskrift om brannforebygging krever at alle byggverk har et brannsikkerhetsnivå tilsvarende det som gjaldt ved byggetidspunktet, minimum BF85 (Byggforskrift av 1985). Eldre bygg som ikke oppfyller dette kravet, skal oppgraderes. Eier er ansvarlig for at oppgradering gjennomføres.
+                  Forskrift om brannforebygging krever at alle byggverk har et brannsikkerhetsnivå tilsvarende det som gjaldt ved byggetidspunktet, minimum BF85 (Byggforskrift av 1985). Eldre bygg som ikke oppfyller dette kravet, skal oppgraderes. Eier er ansvarlig for at oppgradering gjennomføres. For en oversikt over regelverket og hva en <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">branninspeksjon normalt avdekker</a>, se brannkonsult.no.
                 </p>
               </ScrollReveal>
 

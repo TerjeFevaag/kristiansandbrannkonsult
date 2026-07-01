@@ -146,7 +146,7 @@ export default function BrannprosjekteringPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Start tidlig — spar penger</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Jo tidligere i prosjektet du involverer oss, desto enklere og billigere er det å finne gode branntekniske løsninger. Venter du til tegningene er ferdige, kan endringer bli kostbare. Ta kontakt allerede i skisseprosjektfasen.
+                  Jo tidligere i prosjektet du involverer oss, desto enklere og billigere er det å finne gode branntekniske løsninger. Venter du til tegningene er ferdige, kan endringer bli kostbare. Ta kontakt allerede i skisseprosjektfasen. Du kan også lese mer om <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">brannprosjektering som fagområde</a> på brannkonsult.no.
                 </p>
               </ScrollReveal>
 
