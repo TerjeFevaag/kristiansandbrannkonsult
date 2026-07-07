@@ -23,7 +23,7 @@ export default function KontaktOssPage() {
             <span>Kontakt oss</span>
           </div>
           <h1 className="hero-2 text-brand-black text-4xl lg:text-5xl font-black max-w-2xl mx-auto">
-            Kontakt Kristiansand Brannkonsult
+            Kontakt Brannkonsult AS
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
             Ta kontakt for et uforpliktende tilbud. Vi svarer innen 24 timer.

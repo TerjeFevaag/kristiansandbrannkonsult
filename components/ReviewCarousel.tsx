@@ -13,7 +13,7 @@ const reviews = [
     author: 'Heidi Spinnangr',
   },
   {
-    quote: 'Kristiansand Brannkonsult er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
+    quote: 'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
     author: 'Hagelin Byggservice',
     company: 'Daniel Hagelin',
   },
@@ -26,7 +26,7 @@ const reviews = [
     author: 'Jon Cederbrand Arkitektur AS',
   },
   {
-    quote: 'Vi er veldig fornøyde med leveransen fra Kristiansand Brannkonsult AS. De utarbeidet et brannteknisk notat som ga oss all nødvendig dokumentasjon for prosjektet. God service og rask levering.',
+    quote: 'Vi er veldig fornøyde med leveransen fra Brannkonsult AS. De utarbeidet et brannteknisk notat som ga oss all nødvendig dokumentasjon for prosjektet. God service og rask levering.',
     author: 'Ventilasjon AS',
     company: 'Emil Jacobsen',
   },

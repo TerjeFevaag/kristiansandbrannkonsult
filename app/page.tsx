@@ -8,7 +8,7 @@ import ReviewCarousel from '@/components/ReviewCarousel'
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Kristiansand Brannkonsult',
+  name: 'Brannkonsult AS',
   url: 'https://www.kristiansandbrannkonsult.no',
   potentialAction: {
     '@type': 'SearchAction',
