@@ -15,27 +15,27 @@ const faqItems = [
   {
     question: 'Hva er forskjellen på branntilsyn og branninspeksjon?',
     answer:
-      'Branntilsyn utføres av brann- og redningsetaten og er en myndighetskontroll. Branninspeksjon er en grundigere gjennomgang utført av oss som uavhengig rådgiver — vi kartlegger alle branntekniske forhold og utarbeider en handlingsplan.',
+      'Branntilsyn er en myndighetskontroll utført av Kristiansand brann og redning etter brannvernloven — de sjekker typisk internkontroll, rømningsveier og slokkeutstyr. En branninspeksjon utført av oss er en grundigere faglig gjennomgang der vi kartlegger hele byggets branntekniske tilstand, avdekker avvik og lager en prioritert handlingsplan. Vi har ingen myndighet til å gi pålegg — det er en fordel, ikke en ulempe.',
+  },
+  {
+    question: 'Styret i borettslaget vårt har fått pålegg — hva gjør vi?',
+    answer:
+      'Første steg er å forstå hva pålegget faktisk krever. Mange styrer opplever at ordlyden er uklar. Vi leser pålegget, befarer bygget og utarbeider tilstandsrapporten brannvesenet forventer å motta. Deretter lager vi en prioritert plan for hva som må gjøres, og i hvilken rekkefølge.',
   },
   {
     question: 'Hvem er ansvarlig for brannsikkerheten i et sameie?',
     answer:
-      'Styret i sameiet er ansvarlig for at fellesarealer og byggets brannsikkerhet ivaretas. Enkeltbeboere er ansvarlige for sine enheter. Vi kan bistå styret med å oppfylle kravene.',
+      'Styret er ansvarlig for at fellesarealer og byggets branntekniske tilstand er i orden. Enkeltbeboere er ansvarlige for sine enheter. I eldre sameier ser vi ofte at ansvaret er uklart og at dokumentasjon mangler — en branninspeksjon gir styret et tydelig bilde og et godt grunnlag for å handle.',
   },
   {
-    question: 'Hva skjer hvis bygget ikke oppfyller kravene?',
+    question: 'Vi har trehus fra 1960-tallet — hva kan vi forvente å finne?',
     answer:
-      'Kommunen kan gi pålegg om utbedring med frist. Vi hjelper deg med å forstå pålegget, prioritere tiltakene og dokumentere at utbedringene er gjennomført.',
+      'Typiske funn i eldre trehusbebyggelse på Sørlandet er kompromitterte branncelleskillere (f.eks. hull etter rørgjennomføringer), feil type dører i rømningsveier, manglende røykvarsleranlegg i fellesarealer og manglende dokumentasjon av tidligere ombygginger. Vi dokumenterer tilstanden som den faktisk er, ikke som en worst-case-liste.',
   },
   {
     question: 'Hva koster en branninspeksjon?',
     answer:
-      'Prisen avhenger av byggets størrelse og kompleksitet. Vi leverer branninspeksjon over hele landet — fra Kristiansand og Agder til resten av Norge. Kontakt oss for et uforpliktende pristilbud.',
-  },
-  {
-    question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
-    answer:
-      'Forskrift om brannforebygging krever at alle byggverk skal ha et sikkerhetsnivå tilsvarende BF85 (Byggforskrift 1985). Eldre bygninger som ikke oppfyller dette må oppgraderes. Vi vurderer bygg over hele landet og gir deg en klar anbefaling.',
+      'Fra ca. 8 000 kr ekskl. mva. for enklere bygg. Prisen avhenger av byggets størrelse, antall etasjer og tilgjengelig dokumentasjon. Vi gir fastpris etter en innledende gjennomgang av byggets grunndata — kontakt oss for et uforpliktende tilbud.',
   },
 ]
 
@@ -86,7 +86,7 @@ export default function BranninspeksjonPage() {
             Branninspeksjon i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Vi hjelper deg etter pålegg fra branntilsyn og kartlegger brannsikkerheten i din bygning.
+            Vi kartlegger byggets branntekniske tilstand og lager en plan for hva som faktisk må gjøres — enten du er styreleder i et borettslag eller eier av et næringsbygg.
           </p>
         </div>
       </section>
@@ -98,33 +98,33 @@ export default function BranninspeksjonPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning i Kristiansand? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
+                  Agder har en stor andel eldre bygningsbestand — mange borettslag og sameier ble satt opp på 60-, 70- og 80-tallet, og svært få har gjennomgått en fullstendig brannteknisk gjennomgang siden den gang. En branninspeksjon gir styret, eier eller forvalter et faktisk bilde av tilstanden — og et grunnlag for å prioritere tiltak klokt, fremfor å gjøre alt på én gang.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Lovkravet: alle bygg skal opp til BF85-nivå</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Forskrift om brannforebygging krever at alle byggverk har et brannsikkerhetsnivå tilsvarende det som gjaldt ved byggetidspunktet, minimum BF85 (Byggforskrift av 1985). Eldre bygg som ikke oppfyller dette kravet, skal oppgraderes. Eier er ansvarlig for at oppgradering gjennomføres. For en oversikt over regelverket og hva en <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">branninspeksjon normalt avdekker</a>, se brannkonsult.no.
+                  Forskrift om brannforebygging (§ 6) krever at alle eksisterende byggverk opprettholder et brannsikkerhetsnivå tilsvarende Byggforskrift 1985 (BF85). Mange eldre bygg i Kristiansand og Agder oppfyller ikke dette kravet i dag — særlig gjelder dette eldre leilighetskomplekser der branncelleskiller er blitt kompromittert av rørgjennomføringer og ombygginger gjennom årene. For mer om regelverket og hva en <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">branninspeksjon normalt avdekker</a>, se brannkonsult.no.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Brann- og redningsetatens oppgave</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva tilsynet ikke dekker</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Brannvesenet gjennomfører stikkprøvebaserte tilsyn og kan ikke gi en fullstendig gjennomgang av alle branntekniske forhold. Det er byggeiers ansvar å sørge for at alle krav er oppfylt — uavhengig av om brannvesenet har vært på tilsyn eller ikke.
+                  Kristiansand brann og redning gjennomfører tilsyn etter en prioriteringsplan og kan ikke gi en fullstendig faglig gjennomgang av alle branntekniske forhold. Det er byggeiers ansvar å sørge for at kravene er oppfylt — uavhengig av om brannvesenet har vært på tilsyn. Mange eiere oppdager gjennom en privat branninspeksjon avvik de ikke visste om, og som det er langt rimeligere å ta tak i på eget initiativ enn etter et formelt pålegg.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i vår branninspeksjon?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Slik gjennomfører vi inspeksjonen</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Visuell inspeksjon av alle brannceller, rømningsveier og tekniske installasjoner',
-                    'Gjennomgang av eksisterende dokumentasjon',
-                    'Skriftlig tilstandsrapport med alle funn',
-                    'Prioritert handlingsplan for utbedring',
-                    'Veiledning om internkontrollrutiner',
+                    'Gjennomgang av plangrunnlag og eksisterende brannteknisk dokumentasjon',
+                    'Visuell inspeksjon av branncelleskillere, rømningsveier og tekniske installasjoner',
+                    'Vurdering av avvik mot BF85-kravene og gjeldende forskrift',
+                    'Skriftlig tilstandsrapport med fotografisk dokumentasjon av funn',
+                    'Prioritert tiltaksplan med anbefalte tiltak og rekkefølge',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -155,7 +155,7 @@ export default function BranninspeksjonPage() {
 
               <ScrollReveal>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Vi utfører branninspeksjon i Kristiansand og hele Agder — Lillesand, Grimstad, Mandal, Arendal og omegn. Ta kontakt for et uforpliktende tilbud.
+                  Vi utfører branninspeksjon i Kristiansand og hele Agder — borettslag og sameier i Lillesand og Grimstad, næringsgårder i Arendal og Mandal, og andre bygg i regionen. Ta kontakt for et uforpliktende tilbud basert på ditt bygg.
                 </p>
               </ScrollReveal>
 

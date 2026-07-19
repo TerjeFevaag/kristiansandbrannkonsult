@@ -13,35 +13,67 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: 'Hva er forskjellen på branntilsyn og branninspeksjon?',
+    question: 'Hva inneholder et svar på et branntilsynspålegg?',
     answer:
-      'Branntilsyn utføres av brann- og redningsetaten og er en myndighetskontroll. Branninspeksjon er en grundigere gjennomgang utført av oss som uavhengig rådgiver — vi kartlegger alle branntekniske forhold og utarbeider en handlingsplan.',
+      'Svaret på et pålegg skal dokumentere at eier kjenner til avvikene og har en plan for å utbedre dem. Det kreves vanligvis en tilstandsrapport som beskriver de konkrete funnene, og en handlingsplan med frister. Vi utarbeider begge dokumenter og sikrer at svaret inneholder det brannvesenet forventer.',
   },
   {
-    question: 'Hvem er ansvarlig for brannsikkerheten i et sameie?',
+    question: 'Hvilken frist har vi på å svare på pålegget?',
     answer:
-      'Styret i sameiet er ansvarlig for at fellesarealer og byggets brannsikkerhet ivaretas. Enkeltbeboere er ansvarlige for sine enheter. Vi kan bistå styret med å oppfylle kravene.',
+      'Fristen fremgår av selve pålegget og varierer. Noen pålegg har svært korte frister — særlig dersom branntilsynet har avdekket alvorlige rømningsveismangler. Ta kontakt med oss raskt etter at du har mottatt pålegget, så hjelper vi deg å overholde fristen.',
   },
   {
-    question: 'Hva skjer hvis bygget ikke oppfyller kravene?',
+    question: 'Kan vi klage på pålegget?',
     answer:
-      'Kommunen kan gi pålegg om utbedring med frist. Vi hjelper deg med å forstå pålegget, prioritere tiltakene og dokumentere at utbedringene er gjennomført.',
+      'Ja — et branntilsynspålegg er et enkeltvedtak og kan påklages til Statsforvalteren. Klage utsetter ikke plikten til å svare innen fristen. Vi kan hjelpe deg å vurdere om pålegget er faglig velbegrunnet og bistå med klagegrunnlag dersom det er aktuelt.',
   },
   {
-    question: 'Hva koster en branninspeksjon?',
+    question: 'Vi vet ikke hva pålegget krever i praksis — hva gjør vi?',
     answer:
-      'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende pristilbud basert på ditt bygg.',
+      'Kontakt oss. Vi leser pålegget, tar befaring i bygget og forklarer hva som faktisk må gjøres — og i hvilken rekkefølge. Mange styrer og eiere i Agder opplever at ordlyden i pålegget er vanskelig å tolke uten faglig bakgrunn.',
   },
   {
-    question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
+    question: 'Hva koster det å få hjelp etter et branntilsynspålegg?',
     answer:
-      'Forskrift om brannforebygging krever at alle byggverk skal ha et sikkerhetsnivå tilsvarende BF85 (Byggforskrift 1985). Eldre bygninger som ikke oppfyller dette må oppgraderes. Vi vurderer ditt bygg og gir deg en klar anbefaling.',
+      'Prisen avhenger av byggets størrelse og antall avvik som må dokumenteres. Vi gir fastpris etter en innledende gjennomgang. Ta kontakt — vi starter alltid med å hjelpe deg å forstå omfanget, uten kostnad.',
   },
 ]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.kristiansandbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Branntilsyn', item: 'https://www.kristiansandbrannkonsult.no/branntilsyn' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Hjelp etter branntilsyn',
+  description: 'Hjelp etter branntilsynspålegg i Kristiansand og Agder. Tilstandsrapport, handlingsplan og svar til brannvesenet.',
+  provider: { '@type': 'LocalBusiness', name: 'Brannkonsult AS', url: 'https://www.kristiansandbrannkonsult.no' },
+  areaServed: ['Kristiansand', 'Lillesand', 'Grimstad', 'Mandal', 'Arendal', 'Agder'],
+  url: 'https://www.kristiansandbrannkonsult.no/branntilsyn',
+}
 
 export default function BranntilsynPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="bg-brand-lightgray py-16 lg:py-20">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -54,7 +86,7 @@ export default function BranntilsynPage() {
             Branntilsyn og branninspeksjon i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Vi hjelper deg etter pålegg fra branntilsyn og kartlegger brannsikkerheten i din bygning.
+            Branntilsyn fra kommunen gir byggeier en frist for å dokumentere og utbedre mangler. Vi hjelper deg å forstå hva pålegget faktisk innebærer — og å svare korrekt.
           </p>
         </div>
       </section>
@@ -66,33 +98,33 @@ export default function BranntilsynPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning i Kristiansand? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
+                  Kristiansand brann og redning gjennomfører branntilsyn etter en prioriteringsplan basert på bygningstype og risiko. Felles for alle tilsyn er at byggeier er ansvarlig for at kravene er oppfylt — og at et pålegg må besvares skriftlig innen den angitte fristen. Vi bistår borettslag, sameier, eiendomsforvaltere og næringslivet i Agder med å håndtere pålegg riktig.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Slik fungerer et branntilsynspålegg</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Forskrift om brannforebygging krever at alle byggverk har et brannsikkerhetsnivå tilsvarende det som gjaldt ved byggetidspunktet, minimum BF85 (Byggforskrift av 1985). Eldre bygg som ikke oppfyller dette kravet, skal oppgraderes. Eier er ansvarlig for at oppgradering gjennomføres.
+                  Et pålegg fra branntilsynet er et enkeltvedtak etter brannvernloven og krever skriftlig svar innen fristen. Svaret må inneholde en tilstandsrapport som dokumenterer avvikene og en plan for utbedring. Manglende svar kan føre til tvangsmulkt. Vi utarbeider den dokumentasjonen brannvesenet forventer å motta.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Brann- og redningsetatens oppgave</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva kontrollerer brannvesenet?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Brannvesenet gjennomfører stikkprøvebaserte tilsyn og kan ikke gi en fullstendig gjennomgang av alle branntekniske forhold. Det er byggeiers ansvar å sørge for at alle krav er oppfylt — uavhengig av om brannvesenet har vært på tilsyn eller ikke.
+                  Branntilsyn etter brannvernloven (§ 13) og brannforebyggingsforskriften er et myndighetstilsyn — ikke en fullstendig faglig gjennomgang. Brannvesenet sjekker typisk om internkontrollsystem er på plass, om rømningsveier er frie og om varslings- og slokkeutstyr fungerer. Det er ikke brannvesenets oppgave å prosjektere løsninger eller si hva som konkret må gjøres — det er eiers ansvar å finne det ut.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i vår branninspeksjon?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi hjelper med etter pålegg</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Visuell inspeksjon av alle brannceller, rømningsveier og tekniske installasjoner',
-                    'Gjennomgang av eksisterende dokumentasjon',
-                    'Skriftlig tilstandsrapport med alle funn',
-                    'Prioritert handlingsplan for utbedring',
-                    'Veiledning om internkontrollrutiner',
+                    'Gjennomgang av pålegget og hva som faktisk kreves av deg',
+                    'Befaring og tilstandsrapport som dokumenterer de konkrete avvikene',
+                    'Prioritert tiltaksplan med anbefalt rekkefølge og kostnadsestimat',
+                    'Skriftlig svar til brannvesenet med nødvendig dokumentasjon',
+                    'Oppfølging etter at tiltak er gjennomført',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -104,11 +136,10 @@ export default function BranntilsynPage() {
 
               <ScrollReveal>
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8 border-l-4 border-brand-orange">
-                  <h3 className="font-bold text-brand-black mb-2">Typisk ordlyd fra brannvesenet ved pålegg:</h3>
-                  <p className="text-brand-darkgray italic text-sm leading-relaxed">
-                    &laquo;Det er avdekket mangler ved brannsikkerheten i bygget. Eier pålegges å utarbeide en tilstandsrapport og gjennomføre nødvendige tiltak innen [dato].&raquo;
+                  <h3 className="font-bold text-brand-black mb-2">Husk: klage utsetter ikke svarfristen</h3>
+                  <p className="text-brand-darkgray text-sm leading-relaxed">
+                    Selv om du vurderer å klage på pålegget, må du svare innen den angitte fristen. Klagen behandles parallelt — men dersom fristen passerer uten svar, kan brannvesenet ilegge tvangsmulkt. Ta kontakt med oss raskt etter at du har mottatt pålegget.
                   </p>
-                  <p className="text-brand-darkgray text-sm mt-3">Vi hjelper deg med å oppfylle pålegget raskt og kostnadseffektivt.</p>
                 </div>
               </ScrollReveal>
 

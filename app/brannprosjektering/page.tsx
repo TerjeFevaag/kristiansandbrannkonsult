@@ -13,34 +13,34 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: 'Hva koster brannprosjektering?',
+    question: 'Hva er forskjellen på brannkonsept og brannprosjektering?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris uansett hvor i landet prosjektet er.',
+      'Brannprosjektering er samlebetegnelsen på all skriftlig brannfaglig planlegging. Brannkonseptet er den overordnede rapporten som inngår i prosjekteringen. I dagligtale brukes begrepene ofte om hverandre — det viktigste er at dokumentasjonen dekker det kommunen krever for det aktuelle tiltaket.',
   },
   {
-    question: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?',
+    question: 'Hva koster brannprosjektering?',
     answer:
-      'Ja, de fleste tilbygg, bruksendringer og nye boenheter krever brannprosjektering. Ta kontakt for en gratis vurdering av akkurat ditt prosjekt — uansett hvor i Norge det befinner seg.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi gir alltid bindende fastpris — aldri timebasert fakturering som overrasker i etterkant. Send oss prosjektbeskrivelse og tegninger for et konkret tilbud.',
+  },
+  {
+    question: 'Vi skal innrede loft til hybel — trenger vi brannprosjektering?',
+    answer:
+      'Som regel ja. Etablering av en ny selvstendig boenhet — enten det er hybel, sokkelleilighet eller loftsleilighet — krever brannprosjektering i tiltaksklasse 1 eller 2. Det må dokumenteres at boenhetens branncelleskille, rømningsmuligheter og varslingssystem er tilstrekkelig.',
   },
   {
     question: 'Er befaring nødvendig?',
     answer:
-      'For nybygg og enklere saker er det sjelden nødvendig. Takket være digitale kartdata kan vi i mange tilfeller jobbe uten fysisk befaring — noe som gjør det like enkelt å betjene kunder i hele landet. Vi gir beskjed dersom vi ser behov for befaring.',
+      'For nybygg og de fleste enklere saker er det ikke nødvendig med befaring. Vi mottar digitale tegninger og prosjektbeskrivelse og kan jobbe effektivt fra Kristiansand uansett hvor i Agder prosjektet ligger. Vi bestiller befaring kun dersom vi vurderer at det er nødvendig.',
   },
   {
-    question: 'Leverer dere i hele Norge?',
+    question: 'Kan dere ta ansvarsrett som ansvarlig prosjekterende brann?',
     answer:
-      'Ja. Vi har base i Kristiansand og kjenner byggemarkedet i Agder godt, men vi tar jevnlig oppdrag fra hele landet. Ta kontakt uansett hvor prosjektet ditt er.',
+      'Ja — vi er sentralt godkjent i tiltaksklasse 1 og 2 og kan påta oss ansvarsrett som ansvarlig prosjekterende for brannteknisk prosjektering overfor kommunen. Dette er inkludert i oppdraget.',
   },
   {
-    question: 'Tilbyr dere håndverkertjenester?',
+    question: 'Hva trengs for å få pristilbud?',
     answer:
-      'Nei — vi er en nøytral rådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen vår alltid er uavhengig.',
-  },
-  {
-    question: 'Hva trengs for å få et pristilbud?',
-    answer:
-      'Vi trenger: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss, så sender vi tilbud innen 24 timer.',
+      'Vi trenger: adresse og matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Har du dette klart, kan vi som regel gi tilbud samme dag.',
   },
 ]
 
@@ -92,7 +92,7 @@ export default function BrannprosjekteringPage() {
             Brannprosjektering i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Vi sørger for at ditt bygg i Kristiansand oppfyller alle krav til brannsikkerhet — til fast pris.
+            Vi sørger for at byggesøknaden din er komplett med riktig brannteknisk dokumentasjon — slik at tiltaket godkjennes uten unødvendige runder med kommunen.
           </p>
         </div>
       </section>
@@ -104,22 +104,21 @@ export default function BrannprosjekteringPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg i Kristiansand oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris.
+                  De fleste byggesaker i Agder utløser behov for brannprosjektering — enten du bygger nytt i Kristiansand, etablerer en ny boenhet i et eldre trehus i Lillesand eller endrer bruken av et næringsbygg i Arendal sentrum. Brannprosjektering er den skriftlige dokumentasjonen som viser at bygget etterlever kravene i teknisk forskrift (TEK17) og brann- og eksplosjonsvernloven.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Når er det behov for brannprosjektering?</h2>
-                <p className="text-brand-darkgray leading-relaxed mb-4">Brannprosjektering kreves blant annet ved:</p>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hvilke tiltak krever brannprosjektering?</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-4">De fleste tiltak som krever byggetillatelse, krever også brannprosjektering. Eksempler på det vi oftest hjelper med i Agder:</p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Bytte av vinduer eller dører i branncellebegrensende konstruksjoner',
-                    'Tilbygg til eksisterende bygg',
-                    'Påbygg (ny etasje)',
-                    'Bruksendring (f.eks. fra kontor til bolig)',
-                    'Etablering av ny selvstendig boenhet',
-                    'Rehabilitering av eldre bygg',
-                    'Bygging av garasje i tilknytning til bolig',
+                    'Ny selvstendig boenhet (hybel, sokkelleilighet eller loftsleilighet)',
+                    'Bruksendring av rom eller bygning (f.eks. garasje til verksted, eller kontor til bolig)',
+                    'Tilbygg eller påbygg til eksisterende bygg',
+                    'Bytte av branncelleskillende konstruksjoner (dører, vegger, etasjeskillere)',
+                    'Rehabilitering av bygninger oppført før 1997',
+                    'Nye nærings- eller institusjonsbygg',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -130,7 +129,8 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Risikoklasser (RKL)</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Risikoklasse bestemmer kravnivå</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-4">Kravene til brannsikkerhet avhenger av hva bygget brukes til — risikoklassen (RKL) fastsettes etter TEK17:</p>
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
                   <ul className="space-y-2 text-brand-darkgray text-sm">
                     <li><strong>RKL 1:</strong> Garasjer, lager uten personopphold</li>
@@ -144,9 +144,9 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Start tidlig — spar penger</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Involver rådgiver tidlig — spar penger</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Jo tidligere i prosjektet du involverer oss, desto enklere og billigere er det å finne gode branntekniske løsninger. Venter du til tegningene er ferdige, kan endringer bli kostbare. Ta kontakt allerede i skisseprosjektfasen. Du kan også lese mer om <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">brannprosjektering som fagområde</a> på brannkonsult.no.
+                  I Kristiansand, som i resten av Agder, ser vi at de dyreste feilene oppstår når brannteknisk dokumentasjon tas inn for sent. Endringer i tegningene koster lite tidlig i prosessen — de koster mye når byggmesteren allerede er i gang. Involver oss gjerne allerede i skisseprosjektfasen. Du kan lese mer om <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">brannprosjektering som fagområde</a> på brannkonsult.no.
                 </p>
               </ScrollReveal>
 
@@ -154,11 +154,11 @@ export default function BrannprosjekteringPage() {
                 <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Brannkonsept og branntegninger',
-                    'Ansvarsrett for brannprosjektering TKL 1 og 2',
-                    'Fastpris — ingen skjulte kostnader',
-                    'Levering innen 5–10 virkedager',
-                    'Nøytral rådgivning — ingen produktsalg',
+                    'Brannkonsept og branntegninger (BKL 1–3)',
+                    'Ansvarsrett som ansvarlig prosjekterende brann, tiltaksklasse 1 og 2',
+                    'Bindende fastpris — aldri timebasert fakturering',
+                    'Rask levering — normalt 5–10 virkedager etter mottatt underlag',
+                    'Nøytral faglig rådgiver — ingen produkt- eller håndverkstjenester',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -186,7 +186,7 @@ export default function BrannprosjekteringPage() {
 
               <ScrollReveal>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Vi hjelper kunder med brannprosjektering i Kristiansand og hele Agder — Lillesand, Grimstad, Mandal, Arendal og resten av landet. Kontakt oss for et uforpliktende tilbud.
+                  Vi hjelper arkitekter, byggmestere, utbyggere og privatpersoner med brannprosjektering i hele Agder — Kristiansand, Lillesand, Grimstad, Arendal, Mandal og omegn. Kontakt oss for en gratis vurdering.
                 </p>
               </ScrollReveal>
 

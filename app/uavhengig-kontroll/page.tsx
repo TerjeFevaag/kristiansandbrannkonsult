@@ -13,24 +13,24 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: 'Hva er uavhengig kontroll av brann?',
+    question: 'Kan vi starte uavhengig kontroll tidlig, eller må brannkonseptet være ferdig?',
     answer:
-      'Uavhengig kontroll er en lovpålagt kontroll av brannprosjekteringen i visse byggeprosjekter. En annen aktør enn den som prosjekterte skal gjennomgå og bekrefte at brannkonseptet er i tråd med regelverket.',
+      'Det er mulig å involvere oss tidlig i prosjektet for å gi innspill underveis — men den formelle uavhengige kontrollen utføres etter at brannkonseptet er ferdig dokumentert. Vi anbefaler tidlig dialog slik at eventuelle avvik kan rettes mens prosjekteringen fortsatt pågår, ikke etter at byggesøknaden er innlevert.',
   },
   {
     question: 'Når er det krav om uavhengig kontroll av brann?',
     answer:
-      'Det er krav om uavhengig kontroll når brannprosjekteringen er i tiltaksklasse 2 eller høyere, jf. SAK10. Dette gjelder de fleste leilighetsbygg, næringsbygg og offentlige bygg over en viss størrelse.',
+      'Det er krav om uavhengig kontroll (UK) av brannprosjektering når tiltaksklassen er 2 eller høyere, jf. SAK10 § 14-2. Dette gjelder de fleste leilighetsbygg med fire boenheter eller mer, næringsbygg over en viss størrelse og offentlige bygg.',
+  },
+  {
+    question: 'Vi har brukt en lokal brannrådgiver i Kristiansand til prosjekteringen — kan dere ta UK?',
+    answer:
+      'Ja — forutsetningen for uavhengig kontroll er nettopp at vi ikke har vært involvert i prosjekteringen av det aktuelle bygget. Vi kan utføre UK uansett hvem som har prosjektert, og uansett om prosjektet er i Kristiansand, Grimstad, Arendal eller andre kommuner i Agder.',
   },
   {
     question: 'Hva koster uavhengig kontroll?',
     answer:
-      'Prisen avhenger av prosjektets omfang og dokumentasjonsmengde. Vi utfører UK i hele landet — fra Kristiansand og Agder til Oslo, Bergen og resten av Norge. Kontakt oss for et uforpliktende pristilbud.',
-  },
-  {
-    question: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?',
-    answer:
-      'Ja — vi kan utføre uavhengig kontroll for prosjekter der andre har prosjektert, uansett hvor i landet prosjektet er. Som nøytral rådgiver er dette en av våre kjernetjenester.',
+      'Fra ca. 8 000 kr ekskl. mva. Prisen avhenger av prosjektets omfang og dokumentasjonsmengde — et større næringsbygg med kompleks branntegning koster mer enn et enkelt leilighetsbygg. Vi gir fastpris etter å ha sett tegningsgrunnlaget.',
   },
 ]
 
@@ -81,7 +81,7 @@ export default function UavhengigKontrollPage() {
             Uavhengig kontroll av brannkonsept i Kristiansand
           </h1>
           <p className="hero-3 text-brand-darkgray text-lg mt-4 max-w-xl mx-auto leading-relaxed">
-            Vi utfører uavhengig kontroll (UK) av brannkonsept og brannprosjektering i Kristiansand og Agder.
+            Tiltaksklasse 2 eller høyere? Da er uavhengig kontroll av brannkonseptet lovpålagt — og du trenger en aktør som ikke har vært involvert i prosjekteringen.
           </p>
         </div>
       </section>
@@ -93,22 +93,22 @@ export default function UavhengigKontrollPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Dette gir økt trygghet, reduserer risiko for feil og bidrar til en mer forutsigbar byggeprosess. En faglig gjennomgang av <a href="https://www.brannkonsult.no/uavhengig-kontroll-brannkonsept/" className="text-brand-orange hover:underline">kravene til uavhengig kontroll av brann</a> finner du på brannkonsult.no.
+                  Uavhengig kontroll (UK) av brannprosjektering er et krav etter SAK10 for byggesaker i tiltaksklasse 2 og høyere. Formålet er å redusere risikoen for prosjekteringsfeil som ellers ville gå uoppdaget frem til bygget er ferdig — og som da koster langt mer å rette. En faglig gjennomgang av <a href="https://www.brannkonsult.no/uavhengig-kontroll-brannkonsept/" className="text-brand-orange hover:underline">kravene til uavhengig kontroll av brann</a> finner du på brannkonsult.no.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Når er det krav om uavhengig kontroll?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hvem trenger uavhengig kontroll av brann?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Etter SAK10 (Byggesaksforskriften) er det krav om uavhengig kontroll av brannprosjektering når prosjekteringen er i tiltaksklasse 2 eller høyere. Dette gjelder typisk:
+                  SAK10 § 14-2 krever uavhengig kontroll av brannprosjektering der tiltaksklassen er 2 eller høyere. I praksis gjelder dette:
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Leilighetsbygg med fire boenheter eller mer',
-                    'Næringsbygg over en viss størrelse',
-                    'Offentlige bygg og institusjoner',
-                    'Bygninger i risikoklasse 4, 5 og 6',
-                    'Rehabilitering av større eksisterende bygg',
+                    'Leilighetsbygg med fire eller flere boenheter',
+                    'Næringsbygg med krav om risikoklasse 4 eller høyere (kontor, handel, undervisning)',
+                    'Bygninger i mer enn to etasjer med krav om slokkeanlegg',
+                    'Rehabiliteringsprosjekter av større eksisterende bygg',
+                    'Offentlige bygg og institusjoner (skoler, sykehjem, helsebygg)',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -119,14 +119,14 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva kontrolleres?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i kontrollen?</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Brannkonseptets samsvar med TEK17',
-                    'Branntegninger og branncelleoppdeling',
-                    'Løsningsvalg for rømningsveier og slokkeanlegg',
-                    'Dokumentasjon av prosjekteringsgrunnlag',
-                    'Ansvarsrettserklæringer',
+                    'Gjennomgang av brannkonsept mot kravene i TEK17',
+                    'Kontroll av branntegninger: brannceller, seksjonering og rømningsveier',
+                    'Vurdering av løsningsvalg for branntekniske installasjoner',
+                    'Gjennomgang av prosjekteringsgrunnlag og forutsetninger',
+                    'Signering av erklæring om ansvarsrett for uavhengig kontroll',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -137,13 +137,13 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Vår leveranse</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Uavhengig gjennomgang av brannkonsept og branntegninger',
-                    'Skriftlig kontrollrapport',
-                    'Erklæring av ansvarsrett for uavhengig kontroll',
-                    'Nøytral part — vi selger ingen produkter',
+                    'Skriftlig kontrollrapport med eventuelle avvik og merknader',
+                    'Erklæring om ansvarsrett for uavhengig kontroll (SAK10)',
+                    'Nøytral faglig vurdering — vi har ikke vært involvert i prosjekteringen',
+                    'Fastpris basert på faktisk dokumentasjonsmengde',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -164,7 +164,7 @@ export default function UavhengigKontrollPage() {
 
               <ScrollReveal>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Vi utfører uavhengig kontroll i Kristiansand og regionen for øvrig — Grimstad, Lillesand, Arendal, Mandal og resten av Agder.
+                  Vi utfører uavhengig kontroll for prosjekter i hele Agder — Kristiansand, Grimstad, Lillesand, Arendal, Mandal og omegn — og tar også oppdrag i resten av landet der prosjekteringen kan leveres digitalt.
                 </p>
               </ScrollReveal>
 
