@@ -1,13 +1,7 @@
 import { NextResponse } from 'next/server'
 
 export async function POST(request: Request) {
-  const formData = await request.formData()
-
-  const navn = formData.get('navn') as string
-  const epost = formData.get('epost') as string
-  const telefon = formData.get('telefon') as string
-  const prosjekttype = formData.get('prosjekttype') as string
-  const melding = formData.get('melding') as string
+  const { navn, epost, telefon, prosjekttype, melding, vedleggUrls } = await request.json()
 
   if (!navn || !epost || !melding) {
     return NextResponse.json({ error: 'Mangler påkrevde felt' }, { status: 400 })
@@ -17,26 +11,17 @@ export async function POST(request: Request) {
     ? prosjekttype.charAt(0).toUpperCase() + prosjekttype.slice(1).replace(/-/g, ' ')
     : 'Ikke valgt'
 
-  const vedleggFiles = formData.getAll('vedlegg') as File[]
-  const attachments = await Promise.all(
-    vedleggFiles
-      .filter(f => f.size > 0)
-      .map(async file => {
-        const buffer = await file.arrayBuffer()
-        return {
-          content: Buffer.from(buffer).toString('base64'),
-          filename: file.name,
-          disposition: 'attachment',
-        }
-      })
-  )
-
-  const vedleggInfo =
-    attachments.length > 0
-      ? `<tr><td style="padding:8px;font-weight:bold;vertical-align:top">Vedlegg</td><td style="padding:8px">${attachments.map(a => a.filename).join('<br>')}</td></tr>`
+  const vedleggHtml =
+    vedleggUrls && vedleggUrls.length > 0
+      ? `<tr><td style="padding:8px;font-weight:bold;vertical-align:top">Vedlegg</td><td style="padding:8px">${(vedleggUrls as { name: string; url: string }[]).map(v => `<a href="${v.url}">${v.name}</a>`).join('<br>')}</td></tr>`
       : ''
 
-  const emailPayload: Record<string, unknown> = {
+  const vedleggText =
+    vedleggUrls && vedleggUrls.length > 0
+      ? `\n\nVedlegg:\n${(vedleggUrls as { name: string; url: string }[]).map(v => `${v.name}: ${v.url}`).join('\n')}`
+      : ''
+
+  const emailPayload = {
     from: {
       email: 'post@kristiansandbrannkonsult.no',
       name: 'Kristiansand Brannkonsult',
@@ -52,14 +37,10 @@ export async function POST(request: Request) {
         <tr><td style="padding:8px;font-weight:bold">Telefon</td><td style="padding:8px">${telefon || 'Ikke oppgitt'}</td></tr>
         <tr><td style="padding:8px;font-weight:bold">Prosjekttype</td><td style="padding:8px">${prosjektLabel}</td></tr>
         <tr><td style="padding:8px;font-weight:bold;vertical-align:top">Melding</td><td style="padding:8px;white-space:pre-wrap">${melding}</td></tr>
-        ${vedleggInfo}
+        ${vedleggHtml}
       </table>
     `,
-    text: `Ny forespørsel via nettsiden\n\nNavn: ${navn}\nE-post: ${epost}\nTelefon: ${telefon || 'Ikke oppgitt'}\nProsjekttype: ${prosjektLabel}\n\nMelding:\n${melding}${attachments.length > 0 ? `\n\nVedlegg: ${attachments.map(a => a.filename).join(', ')}` : ''}`,
-  }
-
-  if (attachments.length > 0) {
-    emailPayload.attachments = attachments
+    text: `Ny forespørsel via nettsiden\n\nNavn: ${navn}\nE-post: ${epost}\nTelefon: ${telefon || 'Ikke oppgitt'}\nProsjekttype: ${prosjektLabel}\n\nMelding:\n${melding}${vedleggText}`,
   }
 
   const res = await fetch('https://api.mailersend.com/v1/email', {

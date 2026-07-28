@@ -1,13 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { upload } from '@vercel/blob/client'
 import { Paperclip, X } from 'lucide-react'
 
-type Status = 'idle' | 'sending' | 'success' | 'error'
+type Status = 'idle' | 'uploading' | 'sending' | 'success' | 'error'
 
-const MAX_FILE_SIZE = 3 * 1024 * 1024
-const MAX_FILES = 3
-const MAX_TOTAL_SIZE = 4 * 1024 * 1024
+const MAX_FILE_SIZE = 20 * 1024 * 1024
+const MAX_FILES = 4
 const ACCEPTED = '.pdf,.jpg,.jpeg,.png,.dwg,.dxf'
 
 function formatFileSize(bytes: number) {
@@ -19,6 +19,7 @@ export default function ContactForm() {
   const [status, setStatus] = useState<Status>('idle')
   const [files, setFiles] = useState<File[]>([])
   const [fileError, setFileError] = useState<string | null>(null)
+  const [uploadProgress, setUploadProgress] = useState<string | null>(null)
 
   function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
     setFileError(null)
@@ -26,7 +27,7 @@ export default function ContactForm() {
 
     const oversized = selected.find(f => f.size > MAX_FILE_SIZE)
     if (oversized) {
-      setFileError(`${oversized.name} er for stor — maks 3 MB per fil`)
+      setFileError(`${oversized.name} er for stor — maks 20 MB per fil`)
       e.target.value = ''
       return
     }
@@ -34,13 +35,6 @@ export default function ContactForm() {
     const combined = [...files, ...selected]
     if (combined.length > MAX_FILES) {
       setFileError(`Maks ${MAX_FILES} vedlegg`)
-      e.target.value = ''
-      return
-    }
-
-    const totalSize = combined.reduce((sum, f) => sum + f.size, 0)
-    if (totalSize > MAX_TOTAL_SIZE) {
-      setFileError('Totalt vedleggsstørrelse overstiger 4 MB — bruk færre eller mindre filer')
       e.target.value = ''
       return
     }
@@ -55,20 +49,43 @@ export default function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setStatus('sending')
+    setStatus('uploading')
     setFileError(null)
 
     const form = e.currentTarget
-    const formData = new FormData()
-    formData.append('navn', (form.elements.namedItem('navn') as HTMLInputElement).value)
-    formData.append('epost', (form.elements.namedItem('epost') as HTMLInputElement).value)
-    formData.append('telefon', (form.elements.namedItem('telefon') as HTMLInputElement).value)
-    formData.append('prosjekttype', (form.elements.namedItem('prosjekttype') as HTMLSelectElement).value)
-    formData.append('melding', (form.elements.namedItem('melding') as HTMLTextAreaElement).value)
-    files.forEach(file => formData.append('vedlegg', file))
+    const navn = (form.elements.namedItem('navn') as HTMLInputElement).value
+    const epost = (form.elements.namedItem('epost') as HTMLInputElement).value
+    const telefon = (form.elements.namedItem('telefon') as HTMLInputElement).value
+    const prosjekttype = (form.elements.namedItem('prosjekttype') as HTMLSelectElement).value
+    const melding = (form.elements.namedItem('melding') as HTMLTextAreaElement).value
+
+    // Upload files directly to Vercel Blob
+    const vedleggUrls: { name: string; url: string }[] = []
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i]
+      setUploadProgress(`Laster opp fil ${i + 1} av ${files.length}…`)
+      try {
+        const blob = await upload(file.name, file, {
+          access: 'public',
+          handleUploadUrl: '/api/blob-upload',
+        })
+        vedleggUrls.push({ name: file.name, url: blob.url })
+      } catch {
+        setStatus('error')
+        setUploadProgress(null)
+        return
+      }
+    }
+
+    setUploadProgress(null)
+    setStatus('sending')
 
     try {
-      const res = await fetch('/api/contact', { method: 'POST', body: formData })
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ navn, epost, telefon, prosjekttype, melding, vedleggUrls }),
+      })
       setStatus(res.ok ? 'success' : 'error')
     } catch {
       setStatus('error')
@@ -84,6 +101,8 @@ export default function ContactForm() {
       </div>
     )
   }
+
+  const isBusy = status === 'uploading' || status === 'sending'
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
@@ -183,6 +202,7 @@ export default function ContactForm() {
                   onClick={() => removeFile(i)}
                   aria-label={`Fjern ${file.name}`}
                   className="text-brand-darkgray hover:text-red-500 transition-colors shrink-0 ml-1"
+                  disabled={isBusy}
                 >
                   <X size={14} />
                 </button>
@@ -192,15 +212,16 @@ export default function ContactForm() {
         )}
 
         {files.length < MAX_FILES && (
-          <label className="cursor-pointer flex items-center justify-center gap-2 border border-dashed border-brand-gray rounded-[10px] px-4 py-3 text-sm text-brand-darkgray hover:border-brand-orange hover:text-brand-orange transition-colors w-full">
+          <label className={`cursor-pointer flex items-center justify-center gap-2 border border-dashed border-brand-gray rounded-[10px] px-4 py-3 text-sm text-brand-darkgray hover:border-brand-orange hover:text-brand-orange transition-colors w-full ${isBusy ? 'pointer-events-none opacity-50' : ''}`}>
             <Paperclip size={16} />
-            <span>Legg til tegninger eller bilder (PDF, JPG, PNG — maks 3 MB per fil, 4 MB totalt)</span>
+            <span>Legg til tegninger eller bilder (PDF, JPG, PNG — maks 20 MB per fil)</span>
             <input
               type="file"
               multiple
               accept={ACCEPTED}
               onChange={handleFileChange}
               className="sr-only"
+              disabled={isBusy}
             />
           </label>
         )}
@@ -221,10 +242,10 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        disabled={status === 'sending'}
+        disabled={isBusy}
         className="w-full bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-base disabled:opacity-60"
       >
-        {status === 'sending' ? 'Sender...' : 'Send forespørsel'}
+        {uploadProgress ?? (status === 'sending' ? 'Sender…' : 'Send forespørsel')}
       </button>
     </form>
   )
