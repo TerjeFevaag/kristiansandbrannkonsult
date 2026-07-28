@@ -5,8 +5,9 @@ import { Paperclip, X } from 'lucide-react'
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
-const MAX_FILE_SIZE = 10 * 1024 * 1024 // 10 MB
-const MAX_FILES = 5
+const MAX_FILE_SIZE = 3 * 1024 * 1024
+const MAX_FILES = 3
+const MAX_TOTAL_SIZE = 4 * 1024 * 1024
 const ACCEPTED = '.pdf,.jpg,.jpeg,.png,.dwg,.dxf'
 
 function formatFileSize(bytes: number) {
@@ -25,7 +26,7 @@ export default function ContactForm() {
 
     const oversized = selected.find(f => f.size > MAX_FILE_SIZE)
     if (oversized) {
-      setFileError(`${oversized.name} er for stor — maks 10 MB per fil`)
+      setFileError(`${oversized.name} er for stor — maks 3 MB per fil`)
       e.target.value = ''
       return
     }
@@ -33,6 +34,13 @@ export default function ContactForm() {
     const combined = [...files, ...selected]
     if (combined.length > MAX_FILES) {
       setFileError(`Maks ${MAX_FILES} vedlegg`)
+      e.target.value = ''
+      return
+    }
+
+    const totalSize = combined.reduce((sum, f) => sum + f.size, 0)
+    if (totalSize > MAX_TOTAL_SIZE) {
+      setFileError('Totalt vedleggsstørrelse overstiger 4 MB — bruk færre eller mindre filer')
       e.target.value = ''
       return
     }
@@ -186,7 +194,7 @@ export default function ContactForm() {
         {files.length < MAX_FILES && (
           <label className="cursor-pointer flex items-center justify-center gap-2 border border-dashed border-brand-gray rounded-[10px] px-4 py-3 text-sm text-brand-darkgray hover:border-brand-orange hover:text-brand-orange transition-colors w-full">
             <Paperclip size={16} />
-            <span>Legg til tegninger eller bilder (PDF, JPG, PNG — maks 10 MB per fil)</span>
+            <span>Legg til tegninger eller bilder (PDF, JPG, PNG — maks 3 MB per fil, 4 MB totalt)</span>
             <input
               type="file"
               multiple
