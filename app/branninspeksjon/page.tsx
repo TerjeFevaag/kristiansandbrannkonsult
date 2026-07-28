@@ -98,14 +98,14 @@ export default function BranninspeksjonPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Agder har en stor andel eldre bygningsbestand — mange borettslag og sameier ble satt opp på 60-, 70- og 80-tallet, og svært få har gjennomgått en fullstendig brannteknisk gjennomgang siden den gang. En branninspeksjon gir styret, eier eller forvalter et faktisk bilde av tilstanden — og et grunnlag for å prioritere tiltak klokt, fremfor å gjøre alt på én gang.
+                  Kristiansand og Agder har en bygningsmasse som spenner bredt: eldre trehusbebyggelse i Posebyen og Kvadraturen, borettslag fra 60- og 70-tallet på Lund, Grim og Eg, industri- og næringsbygg i Vennesla og langs E39, og en stadig voksende boligmasse i randsonen. Mange av disse byggene har aldri gjennomgått en fullstendig brannteknisk gjennomgang. En branninspeksjon gir styret, eier eller forvalter et faktisk bilde av tilstanden — og et grunnlag for å prioritere tiltak klokt, fremfor å gjøre alt på én gang.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Lovkravet: alle bygg skal opp til BF85-nivå</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Forskrift om brannforebygging (§ 6) krever at alle eksisterende byggverk opprettholder et brannsikkerhetsnivå tilsvarende Byggforskrift 1985 (BF85). Mange eldre bygg i Kristiansand og Agder oppfyller ikke dette kravet i dag — særlig gjelder dette eldre leilighetskomplekser der branncelleskiller er blitt kompromittert av rørgjennomføringer og ombygginger gjennom årene. For mer om regelverket og hva en <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">branninspeksjon normalt avdekker</a>, se brannkonsult.no.
+                  Forskrift om brannforebygging (§ 6) krever at alle eksisterende byggverk opprettholder et brannsikkerhetsnivå tilsvarende Byggforskrift 1985 (BF85). I Kristiansand gjelder dette særlig de mange leilighetskompleksene fra etterkrigstiden — blokker på Lund og i Vågsbygd der branncelleskillere er blitt kompromittert av rørgjennomføringer, og verneverdig trehusbebyggelse i Posebyen der kravene til brannsikring må balanseres mot antikvariske hensyn. For mer om regelverket og hva en <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">branninspeksjon normalt avdekker</a>, se brannkonsult.no.
                 </p>
               </ScrollReveal>
 
@@ -155,7 +155,7 @@ export default function BranninspeksjonPage() {
 
               <ScrollReveal>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Vi utfører branninspeksjon i Kristiansand og hele Agder — borettslag og sameier i Lillesand og Grimstad, næringsgårder i Arendal og Mandal, og andre bygg i regionen. Ta kontakt for et uforpliktende tilbud basert på ditt bygg.
+                  Vi utfører branninspeksjon i Kristiansand og hele Agder — borettslag og sameier på Lund, Grim og i Lillesand, eldre næringsbygg i Arendal og Mandal sentrum, trehusrekker i Grimstad og langs sjøfronten på Sørlandet. Ta kontakt for et uforpliktende tilbud basert på ditt bygg.
                 </p>
               </ScrollReveal>
 

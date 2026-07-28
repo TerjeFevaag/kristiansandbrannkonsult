@@ -188,7 +188,7 @@ export default function BrannkonseptPage() {
 
               <ScrollReveal>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Vi kjenner byggetypene på Sørlandet godt — fra verneverdige trehus i Grimstad og Arendal til nyere leilighetsbygg langs sjøfronten i Kristiansand og næringsbygg i vekstkommunene. Ta kontakt for en gratis vurdering av akkurat ditt prosjekt.
+                  Vi kjenner byggetypene på Sørlandet godt — fra verneverdig trehusbebyggelse i Posebyen og langs sjøfronten i Grimstad og Arendal, til leilighetsbygg langs Otra, industri- og næringsbygg i Vennesla og nyutvikling i Kristiansand havn. Ta kontakt for en gratis vurdering av akkurat ditt prosjekt.
                 </p>
               </ScrollReveal>
 
