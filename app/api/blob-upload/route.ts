@@ -15,6 +15,8 @@ export async function POST(request: Request): Promise<NextResponse> {
           'image/png',
           'image/gif',
           'image/webp',
+          'application/msword',
+          'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
           'application/octet-stream',
         ],
         maximumSizeInBytes: 20 * 1024 * 1024,
