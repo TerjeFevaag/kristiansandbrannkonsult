@@ -1,31 +1,66 @@
 'use client'
 
 import { useState } from 'react'
+import { Paperclip, X } from 'lucide-react'
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
+const MAX_FILE_SIZE = 10 * 1024 * 1024 // 10 MB
+const MAX_FILES = 5
+const ACCEPTED = '.pdf,.jpg,.jpeg,.png,.dwg,.dxf'
+
+function formatFileSize(bytes: number) {
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
+}
+
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>('idle')
+  const [files, setFiles] = useState<File[]>([])
+  const [fileError, setFileError] = useState<string | null>(null)
+
+  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
+    setFileError(null)
+    const selected = Array.from(e.target.files || [])
+
+    const oversized = selected.find(f => f.size > MAX_FILE_SIZE)
+    if (oversized) {
+      setFileError(`${oversized.name} er for stor — maks 10 MB per fil`)
+      e.target.value = ''
+      return
+    }
+
+    const combined = [...files, ...selected]
+    if (combined.length > MAX_FILES) {
+      setFileError(`Maks ${MAX_FILES} vedlegg`)
+      e.target.value = ''
+      return
+    }
+
+    setFiles(combined)
+    e.target.value = ''
+  }
+
+  function removeFile(index: number) {
+    setFiles(prev => prev.filter((_, i) => i !== index))
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('sending')
+    setFileError(null)
 
     const form = e.currentTarget
-    const data = {
-      navn: (form.elements.namedItem('navn') as HTMLInputElement).value,
-      epost: (form.elements.namedItem('epost') as HTMLInputElement).value,
-      telefon: (form.elements.namedItem('telefon') as HTMLInputElement).value,
-      prosjekttype: (form.elements.namedItem('prosjekttype') as HTMLSelectElement).value,
-      melding: (form.elements.namedItem('melding') as HTMLTextAreaElement).value,
-    }
+    const formData = new FormData()
+    formData.append('navn', (form.elements.namedItem('navn') as HTMLInputElement).value)
+    formData.append('epost', (form.elements.namedItem('epost') as HTMLInputElement).value)
+    formData.append('telefon', (form.elements.namedItem('telefon') as HTMLInputElement).value)
+    formData.append('prosjekttype', (form.elements.namedItem('prosjekttype') as HTMLSelectElement).value)
+    formData.append('melding', (form.elements.namedItem('melding') as HTMLTextAreaElement).value)
+    files.forEach(file => formData.append('vedlegg', file))
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      })
+      const res = await fetch('/api/contact', { method: 'POST', body: formData })
       setStatus(res.ok ? 'success' : 'error')
     } catch {
       setStatus('error')
@@ -116,6 +151,55 @@ export default function ContactForm() {
           className="w-full px-4 py-3 border border-brand-gray rounded-[10px] text-brand-black placeholder:text-brand-darkgray focus:outline-none focus:border-brand-orange transition-colors resize-none"
           placeholder="Beskriv prosjektet ditt kort..."
         />
+      </div>
+
+      {/* File upload */}
+      <div>
+        <label className="block text-sm font-bold text-brand-black mb-1.5">
+          Vedlegg{' '}
+          <span className="font-normal text-brand-darkgray">(valgfritt)</span>
+        </label>
+
+        {files.length > 0 && (
+          <ul className="space-y-2 mb-3">
+            {files.map((file, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 bg-brand-lightgray rounded-[8px] px-3 py-2 text-sm"
+              >
+                <Paperclip size={14} className="text-brand-orange shrink-0" />
+                <span className="text-brand-black truncate flex-1">{file.name}</span>
+                <span className="text-brand-darkgray shrink-0 text-xs">{formatFileSize(file.size)}</span>
+                <button
+                  type="button"
+                  onClick={() => removeFile(i)}
+                  aria-label={`Fjern ${file.name}`}
+                  className="text-brand-darkgray hover:text-red-500 transition-colors shrink-0 ml-1"
+                >
+                  <X size={14} />
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {files.length < MAX_FILES && (
+          <label className="cursor-pointer flex items-center justify-center gap-2 border border-dashed border-brand-gray rounded-[10px] px-4 py-3 text-sm text-brand-darkgray hover:border-brand-orange hover:text-brand-orange transition-colors w-full">
+            <Paperclip size={16} />
+            <span>Legg til tegninger eller bilder (PDF, JPG, PNG — maks 10 MB per fil)</span>
+            <input
+              type="file"
+              multiple
+              accept={ACCEPTED}
+              onChange={handleFileChange}
+              className="sr-only"
+            />
+          </label>
+        )}
+
+        {fileError && (
+          <p className="text-red-600 text-sm mt-2">{fileError}</p>
+        )}
       </div>
 
       {status === 'error' && (
