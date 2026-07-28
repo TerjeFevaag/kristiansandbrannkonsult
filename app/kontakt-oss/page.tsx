@@ -36,7 +36,7 @@ export default function KontaktOssPage() {
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16">
             <ScrollReveal className="lg:w-[60%]">
-              <h2 className="text-brand-black text-2xl font-black mb-8">Send oss en forespørsel</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-8">Få uforpliktende tilbud</h2>
               <ContactForm />
             </ScrollReveal>
 
