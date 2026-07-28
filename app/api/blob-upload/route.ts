@@ -14,6 +14,7 @@ export async function POST(request: Request): Promise<NextResponse> {
           'image/jpeg',
           'image/png',
           'image/gif',
+          'image/webp',
           'application/octet-stream',
         ],
         maximumSizeInBytes: 20 * 1024 * 1024,

@@ -8,7 +8,7 @@ type Status = 'idle' | 'uploading' | 'sending' | 'success' | 'error'
 
 const MAX_FILE_SIZE = 20 * 1024 * 1024
 const MAX_FILES = 4
-const ACCEPTED = '.pdf,.jpg,.jpeg,.png,.dwg,.dxf'
+const ACCEPTED = '.pdf,.jpg,.jpeg,.png,.gif,.webp,.dwg,.dxf'
 
 function formatFileSize(bytes: number) {
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`
@@ -214,7 +214,7 @@ export default function ContactForm() {
         {files.length < MAX_FILES && (
           <label className={`cursor-pointer flex items-center justify-center gap-2 border border-dashed border-brand-gray rounded-[10px] px-4 py-3 text-sm text-brand-darkgray hover:border-brand-orange hover:text-brand-orange transition-colors w-full ${isBusy ? 'pointer-events-none opacity-50' : ''}`}>
             <Paperclip size={16} />
-            <span>Legg til tegninger eller bilder (PDF, JPG, PNG — maks 20 MB per fil)</span>
+            <span>Legg til tegninger eller bilder (PDF, JPG, PNG, DWG, DXF — maks 20 MB per fil)</span>
             <input
               type="file"
               multiple
