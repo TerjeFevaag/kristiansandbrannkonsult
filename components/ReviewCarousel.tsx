@@ -5,13 +5,12 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const reviews = [
   {
-    quote: 'Raskt svar og god hjelp. Meget godt gjennomført brannkonsept som var greit å skjønne. Gode tips og forslag til endringer underveis. Meget fornøyd!',
-    author: 'Ola Gartland Falmår',
+    quote: 'Veldig hyggelig og løsningsorientert. Tar seg tid til spørsmål og ønske om endringer.',
+    author: 'Hartmut Wachter',
   },
   {
-    quote: 'Svært fornøyd. Tar seg tid til å drøfte fornuftige og økonomiske løsninger. Setter pris på at dere er med på en forhåndsvurdering på telefon før bestilling av prosjektering.',
-    author: 'SN Byggservice AS',
-    company: 'Stian Nytveit',
+    quote: 'Svært god service. Trygt med folk som kan faget sitt. Fekk svært god hjelp og mange gode tips og innspel under byggeprosessen.',
+    author: 'Brynjulf Hardang',
   },
   {
     quote: 'Enkel og grei å jobbe med, fant gode konsepter sammen uten å dreie mot kompliserte og kostbare løsninger.',
@@ -27,8 +26,8 @@ const reviews = [
     company: 'Kim Erik Moen',
   },
   {
-    quote: 'Godt fornøyd med bistanden — kjapp og konstruktiv, samt at det er foretatt en god balanse mellom krav og praktiske løsninger.',
-    author: 'Monica Solberg',
+    quote: 'God oppfølging, god gjennomføring og god dialog underveis. Fornøyd med samarbeidet!',
+    author: 'Ivar Maseng',
   },
 ]
 
