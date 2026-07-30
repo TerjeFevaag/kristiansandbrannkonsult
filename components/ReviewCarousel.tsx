@@ -5,30 +5,31 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const reviews = [
   {
-    quote: 'Lett å få kontakt med firmaet på ulike spørsmål som dukker opp underveis. Jeg har kun hatt gode opplevelser, selv om ikke alt var helt klart for meg som ufaglært.',
-    author: 'Kirsti Andresen',
+    quote: 'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Måtte endre noe i rapporten pga ny planløsning. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
+    author: 'Boplass Eiendom',
+    company: 'Egil Hellestø',
   },
   {
-    quote: 'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Ble ikke tilbudt en dyr dokumentasjonspakke som var overdimensjonert. Veldig fornøyd!',
-    author: 'Heidi Spinnangr',
+    quote: 'Svært fornøyd. Tar seg tid til å drøfte fornuftige og økonomiske løsninger. Setter pris på at dere er med på en forhåndsvurdering på telefon før bestilling av prosjektering.',
+    author: 'SN Byggservice AS',
+    company: 'Stian Nytveit',
   },
   {
-    quote: 'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
-    author: 'Hagelin Byggservice',
-    company: 'Daniel Hagelin',
+    quote: 'Enkel og grei å jobbe med, fant gode konsepter sammen uten å dreie mot kompliserte og kostbare løsninger.',
+    author: 'Einar Lundgaard',
   },
   {
-    quote: 'Ga rask tilbakemelding ved første kontakt. Leverte til avtalt tid og pris. Høy kvalitet på arbeidet. Veldig behjelpelig med å svare på andre spørsmål i ettertid, vederlagsfritt.',
-    author: 'Jonathan Steinsvik',
+    quote: 'Veldig rask respons, høy faglig kompetanse og høy grad av løsningsorientering. Får mine beste anbefalinger!',
+    author: 'Nabila Sabab',
   },
   {
-    quote: 'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.',
-    author: 'Jon Cederbrand Arkitektur AS',
+    quote: 'På spørsmål om brannkonsept og ansvarsrett for fagområdet fikk vi raskt og profesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
+    author: 'Saltdalshytta Innlandet AS',
+    company: 'Kim Erik Moen',
   },
   {
-    quote: 'Vi er veldig fornøyde med leveransen fra Brannkonsult AS. De utarbeidet et brannteknisk notat som ga oss all nødvendig dokumentasjon for prosjektet. God service og rask levering.',
-    author: 'Ventilasjon AS',
-    company: 'Emil Jacobsen',
+    quote: 'Godt fornøyd med bistanden — kjapp og konstruktiv, samt at det er foretatt en god balanse mellom krav og praktiske løsninger.',
+    author: 'Monica Solberg',
   },
 ]
 
