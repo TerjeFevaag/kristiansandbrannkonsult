@@ -5,9 +5,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const reviews = [
   {
-    quote: 'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Måtte endre noe i rapporten pga ny planløsning. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
-    author: 'Boplass Eiendom',
-    company: 'Egil Hellestø',
+    quote: 'Raskt svar og god hjelp. Meget godt gjennomført brannkonsept som var greit å skjønne. Gode tips og forslag til endringer underveis. Meget fornøyd!',
+    author: 'Ola Gartland Falmår',
   },
   {
     quote: 'Svært fornøyd. Tar seg tid til å drøfte fornuftige og økonomiske løsninger. Setter pris på at dere er med på en forhåndsvurdering på telefon før bestilling av prosjektering.',
