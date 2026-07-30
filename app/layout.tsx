@@ -83,12 +83,12 @@ const jsonLd = {
     worstRating: '1',
   },
   review: [
-    { '@type': 'Review', author: { '@type': 'Person', name: 'Kirsti Andresen' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Lett å få kontakt med firmaet på ulike spørsmål som dukker opp underveis. Jeg har kun hatt gode opplevelser, selv om ikke alt var helt klart for meg som ufaglært.' },
-    { '@type': 'Review', author: { '@type': 'Person', name: 'Heidi Spinnangr' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Veldig fornøyd!' },
-    { '@type': 'Review', author: { '@type': 'Organization', name: 'Hagelin Byggservice' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet.' },
-    { '@type': 'Review', author: { '@type': 'Person', name: 'Jonathan Steinsvik' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Ga rask tilbakemelding ved første kontakt. Leverte til avtalt tid og pris. Høy kvalitet på arbeidet.' },
-    { '@type': 'Review', author: { '@type': 'Organization', name: 'Jon Cederbrand Arkitektur AS' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.' },
-    { '@type': 'Review', author: { '@type': 'Organization', name: 'Ventilasjon AS' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Vi er veldig fornøyde med leveransen fra Brannkonsult AS. God service og rask levering.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Brynjulf Hardang' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Svært god service. Trygt med folk som kan faget sitt. Fekk svært god hjelp og mange gode tips og innspel under byggeprosessen.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Einar Lundgaard' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Enkel og grei å jobbe med, fant gode konsepter sammen uten å dreie mot kompliserte og kostbare løsninger.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Nabila Sabab' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Veldig rask respons, høy faglig kompetanse og høy grad av løsningsorientering. Får mine beste anbefalinger!' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Hartmut Wachter' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Veldig hyggelig og løsningsorientert. Tar seg tid til spørsmål og ønske om endringer.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Sunniva Opsahl' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Godt fornøyd med brannsikringsvurderingen som ble gjort, og at firmaet tok ansvarsrett for brannsikkerhet i vår sak. Rapporten førte til ferdigattest hos kommunen for tilbygg til en dobbeltgarasje.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Cecilie Pettersen Leira' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Ble ikke tilbudt en dyr dokumentasjonspakke som var overdimensjonert i henhold til vårt prosjekt. Veldig fornøyd!' },
   ],
 }
 

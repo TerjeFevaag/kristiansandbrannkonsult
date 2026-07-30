@@ -21,13 +21,12 @@ const reviews = [
     author: 'Nabila Sabab',
   },
   {
-    quote: 'På spørsmål om brannkonsept og ansvarsrett for fagområdet fikk vi raskt og profesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
-    author: 'Saltdalshytta Innlandet AS',
-    company: 'Kim Erik Moen',
+    quote: 'Godt fornøyd med brannsikringsvurderingen som ble gjort, og at firmaet tok ansvarsrett for brannsikkerhet i vår sak. Rapporten førte til ferdigattest hos kommunen for tilbygg til en dobbeltgarasje.',
+    author: 'Sunniva Opsahl',
   },
   {
-    quote: 'God oppfølging, god gjennomføring og god dialog underveis. Fornøyd med samarbeidet!',
-    author: 'Ivar Maseng',
+    quote: 'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Ble ikke tilbudt en dyr dokumentasjonspakke som var overdimensjonert i henhold til vårt prosjekt. Veldig fornøyd!',
+    author: 'Cecilie Pettersen Leira',
   },
 ]
 
