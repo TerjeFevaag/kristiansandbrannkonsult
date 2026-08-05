@@ -3,14 +3,16 @@
 import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-const reviews = [
+type Review = { quote: string; author: string; company?: string }
+const reviews: Review[] = [
   {
     quote: 'God kvalitet på rapporten som ble utarbeidet. Meget godt fornøyd med utførelsen, responstid og oppfølging.',
     author: 'Kjell Norrblom',
   },
   {
-    quote: 'Svært god service. Trygt med folk som kan faget sitt. Fekk svært god hjelp og mange gode tips og innspel under byggeprosessen.',
-    author: 'Brynjulf Hardang',
+    quote: 'Vi får kjappe tilbakemeldinger ved brannprosjektering på forespurte tiltak.',
+    author: 'Terje Dahl',
+    company: 'Follo Bygg & Eiendom AS',
   },
   {
     quote: 'Enkel og grei å jobbe med, fant gode konsepter sammen uten å dreie mot kompliserte og kostbare løsninger.',
@@ -44,6 +46,7 @@ export default function ReviewCarousel() {
       </p>
       <div className="mb-8">
         <p className="font-bold text-brand-black text-lg">{review.author}</p>
+        {review.company && <p className="text-brand-darkgray">{review.company}</p>}
       </div>
       <div className="flex items-center justify-center gap-6">
         <button
