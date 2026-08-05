@@ -83,11 +83,11 @@ const jsonLd = {
     worstRating: '1',
   },
   review: [
-    { '@type': 'Review', author: { '@type': 'Person', name: 'Øyvind Hamre' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Raske og effektive, hyggelige, gode kontakter andre tjenester innenfor samme fagområde.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Kjell Norrblom' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'God kvalitet på rapporten som ble utarbeidet. Meget godt fornøyd med utførelsen, responstid og oppfølging.' },
     { '@type': 'Review', author: { '@type': 'Person', name: 'Brynjulf Hardang' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Svært god service. Trygt med folk som kan faget sitt. Fekk svært god hjelp og mange gode tips og innspel under byggeprosessen.' },
     { '@type': 'Review', author: { '@type': 'Person', name: 'Einar Lundgaard' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Enkel og grei å jobbe med, fant gode konsepter sammen uten å dreie mot kompliserte og kostbare løsninger.' },
-    { '@type': 'Review', author: { '@type': 'Person', name: 'Trine Bernt' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Leverte strøken prosjektering på kort tid til en meget god pris. Kunne ikke vært bedre!' },
-    { '@type': 'Review', author: { '@type': 'Person', name: 'Michael Gudmundsen' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'God veiledning og kommunikasjon samt at de utførte jobben raskt. Veldig fornøyd med jobben de gjorde for oss.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Walentinas Sniticzius' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Vi er svært fornøyd med responstiden, kvaliteten og prisen.' },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Ola Gartland Falmår' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Raskt svar og god hjelp. Meget godt gjennomført brannkonsept som var greit å skjønne. Gode tips og forslag til endringer underveis. Meget fornøyd!' },
     { '@type': 'Review', author: { '@type': 'Person', name: 'Christer Nadden' }, reviewRating: { '@type': 'Rating', ratingValue: '5' }, reviewBody: 'Vi har fått mer hjelp enn forventet også etter at rapporten blei levert. Takk!' },
   ],
 }

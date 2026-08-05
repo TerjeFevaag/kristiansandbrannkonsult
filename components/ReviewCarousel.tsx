@@ -5,8 +5,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const reviews = [
   {
-    quote: 'Raske og effektive, hyggelige, gode kontakter andre tjenester innenfor samme fagområde.',
-    author: 'Øyvind Hamre',
+    quote: 'God kvalitet på rapporten som ble utarbeidet. Meget godt fornøyd med utførelsen, responstid og oppfølging.',
+    author: 'Kjell Norrblom',
   },
   {
     quote: 'Svært god service. Trygt med folk som kan faget sitt. Fekk svært god hjelp og mange gode tips og innspel under byggeprosessen.',
@@ -17,12 +17,12 @@ const reviews = [
     author: 'Einar Lundgaard',
   },
   {
-    quote: 'Leverte strøken prosjektering på kort tid til en meget god pris. Kunne ikke vært bedre!',
-    author: 'Trine Bernt',
+    quote: 'Vi er svært fornøyd med responstiden, kvaliteten og prisen.',
+    author: 'Walentinas Sniticzius',
   },
   {
-    quote: 'God veiledning og kommunikasjon samt at de utførte jobben raskt. Veldig fornøyd med jobben de gjorde for oss.',
-    author: 'Michael Gudmundsen',
+    quote: 'Raskt svar og god hjelp. Meget godt gjennomført brannkonsept som var greit å skjønne. Gode tips og forslag til endringer underveis. Meget fornøyd!',
+    author: 'Ola Gartland Falmår',
   },
   {
     quote: 'Vi har fått mer hjelp enn forventet også etter at rapporten blei levert. Takk!',
