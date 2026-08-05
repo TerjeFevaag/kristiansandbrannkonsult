@@ -44,7 +44,6 @@ export default function ReviewCarousel() {
       </p>
       <div className="mb-8">
         <p className="font-bold text-brand-black text-lg">{review.author}</p>
-        {review.company && <p className="text-brand-darkgray">{review.company}</p>}
       </div>
       <div className="flex items-center justify-center gap-6">
         <button
