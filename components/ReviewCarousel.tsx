@@ -5,8 +5,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const reviews = [
   {
-    quote: 'Veldig hyggelig og løsningsorientert. Tar seg tid til spørsmål og ønske om endringer.',
-    author: 'Hartmut Wachter',
+    quote: 'Raske og effektive, hyggelige, gode kontakter andre tjenester innenfor samme fagområde.',
+    author: 'Øyvind Hamre',
   },
   {
     quote: 'Svært god service. Trygt med folk som kan faget sitt. Fekk svært god hjelp og mange gode tips og innspel under byggeprosessen.',
@@ -17,16 +17,16 @@ const reviews = [
     author: 'Einar Lundgaard',
   },
   {
-    quote: 'Veldig rask respons, høy faglig kompetanse og høy grad av løsningsorientering. Får mine beste anbefalinger!',
-    author: 'Nabila Sabab',
+    quote: 'Leverte strøken prosjektering på kort tid til en meget god pris. Kunne ikke vært bedre!',
+    author: 'Trine Bernt',
   },
   {
-    quote: 'Godt fornøyd med brannsikringsvurderingen som ble gjort, og at firmaet tok ansvarsrett for brannsikkerhet i vår sak. Rapporten førte til ferdigattest hos kommunen for tilbygg til en dobbeltgarasje.',
-    author: 'Sunniva Opsahl',
+    quote: 'God veiledning og kommunikasjon samt at de utførte jobben raskt. Veldig fornøyd med jobben de gjorde for oss.',
+    author: 'Michael Gudmundsen',
   },
   {
-    quote: 'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Ble ikke tilbudt en dyr dokumentasjonspakke som var overdimensjonert i henhold til vårt prosjekt. Veldig fornøyd!',
-    author: 'Cecilie Pettersen Leira',
+    quote: 'Vi har fått mer hjelp enn forventet også etter at rapporten blei levert. Takk!',
+    author: 'Christer Nadden',
   },
 ]
 
